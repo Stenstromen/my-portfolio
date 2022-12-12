@@ -13,7 +13,6 @@ function App() {
   return (
     <div>
       <NavBar />
-      
       <Routes>
         <Route path="/Projects" element={<Projects />} />
         <Route path="/" element={<Home />} />

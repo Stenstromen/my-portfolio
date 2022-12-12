@@ -1,4 +1,9 @@
-
+:root {
+  --bs-body-bg: "#fff7f0";
+}
+body {
+  background-color: var(--bs-body-bg);
+}
 
 .App {
   text-align: center;
