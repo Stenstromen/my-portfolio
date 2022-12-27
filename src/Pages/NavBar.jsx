@@ -3,12 +3,14 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 
-function NavBar() {
+function NavBar({ isMobile }) {
   return (
     <div>
       <Navbar bg="#22223b" style={{ fontSize: "25px" }}>
-        <Container>
-          <Nav className="me-auto"></Nav>
+        <Container className="justify-content-center">
+          {isMobile ? null : (
+            <Nav className="me-auto justify-content-center"></Nav>
+          )}
           <Nav>
             <LinkContainer to="/Projects">
               <Nav.Link style={{ color: "black" }} href="Projects">
@@ -16,9 +18,9 @@ function NavBar() {
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to="Contact">
-            <Nav.Link style={{ color: "black" }} href="Contact">
-              Contact
-            </Nav.Link>
+              <Nav.Link style={{ color: "black" }} href="Contact">
+                Contact
+              </Nav.Link>
             </LinkContainer>
             <LinkContainer to="/">
               <Nav.Link style={{ color: "black" }} href="Home">

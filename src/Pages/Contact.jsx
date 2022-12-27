@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 
-function Contact() {
+function Contact({ isMobile }) {
   return (
-    
     <motion.div
+      style={{ paddingBottom: isMobile ? "109.2%" : null }}
       initial={{ y: "+100%", opacity: 0 }}
       animate={{ y: 1, opacity: 1 }}
       transition={{
@@ -12,28 +12,29 @@ function Contact() {
         type: "spring",
       }}
     >
-       <div style={{display: "flex",
+      <div
+        style={{
+          display: "flex",
           justifyContent: "left",
-          paddingLeft:"15%",
-          paddingTop:"8%"
-          }}>
-          <h1> - Connect with me?!</h1>
-          </div>
+          paddingLeft: "15%",
+          paddingTop: isMobile ? "40%" : "8%",
+        }}
+      >
+        <h1> - Connect with me?!</h1>
+      </div>
 
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           marginTop: "5%",
-          textAlign:"center"
+          textAlign: "center",
         }}
       >
         <div>
-         
           <a
             href="https://www.linkedin.com/in/ida-h%C3%A4gerth/"
             target="_blank"
-            
           >
             <img src="img/li.png" style={{ width: "30%" }} />
           </a>
