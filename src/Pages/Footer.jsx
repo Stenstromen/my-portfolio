@@ -1,7 +1,8 @@
 import { FaLinkedin } from "react-icons/fa";
-import { SiGithub } from "react-icons/si";
+import { TfiGithub } from "react-icons/tfi";
 
 function Footer({ isMobile }) {
+  const year = new Date().getFullYear();
   return (
     <div>
       <footer
@@ -24,19 +25,23 @@ function Footer({ isMobile }) {
             <a
               href="https://www.linkedin.com/in/ida-h%C3%A4gerth/"
               target="_blank"
-              style={{ marginLeft: "10px", color: "black" }}
+              style={{ marginLeft: "10px", color: "#f686bd" }}
             >
               <FaLinkedin size={25} />
             </a>
             <a
               href="https://github.com/idahagerth"
               target="_blank"
-              style={{ marginLeft: "10px", color: "black" }}
+              style={{ marginLeft: "10px", color: "#f686bd" }}
             >
-              <SiGithub size={25} />
+              <TfiGithub size={25} />
             </a>
           </div>
-          <p style={{ fontWeight: "bold" }}>©2022 Ida Hägerth </p>
+          <p
+            style={{ fontWeight: "bold", paddingTop: "10px", color: "#f686bd" }}
+          >
+            ©{year} Ida Hägerth{" "}
+          </p>
         </div>
       </footer>
     </div>

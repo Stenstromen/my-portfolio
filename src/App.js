@@ -11,7 +11,7 @@ import { useEffect, useState } from "react";
 document.body.style = "background: #fff7f0;";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
 
   useEffect(() => {
     return window.addEventListener("resize", () => {
