@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 function Contact({ isMobile }) {
@@ -33,7 +35,8 @@ function Contact({ isMobile }) {
       >
         <div>
           <a
-            href="https://www.linkedin.com/in/ida-h%C3%A4gerth/"
+            href="https://www.linkedin.com/in/filip-stenstr%C3%B6m/"
+            rel="noreferrer"
             target="_blank"
           >
             <img src="img/li.png" style={{ width: "30%" }} />
@@ -43,5 +46,9 @@ function Contact({ isMobile }) {
     </motion.div>
   );
 }
+
+Contact.propTypes = {
+  isMobile: PropTypes.bool,
+};
 
 export default Contact;

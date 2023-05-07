@@ -1,4 +1,7 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
+import Badges from "../Components/Badges";
 
 function Home({ isMobile }) {
   return (
@@ -22,7 +25,7 @@ function Home({ isMobile }) {
           Hello!
         </h1>
         <h2 style={{ paddingLeft: "5%", fontSize: isMobile ? "22px" : "35px" }}>
-          I'm Ida Hägerth - Studying Frontend Development.
+          I&apos;m Filip - DevOps Engineer and Hobbyist Programmer.
         </h2>
         <h3 style={{ paddingLeft: "5%" }}> - Based in Stockholm, Sweden.</h3>
       </motion.div>
@@ -43,171 +46,16 @@ function Home({ isMobile }) {
               paddingTop: isMobile ? "50%" : "11%",
             }}
           >
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=for-the-badge"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/Playwright-2EAD33?logo=playwright&logoColor=fff&style=for-the-badge"
-            />
-            <img
-              style={{
-                paddingLeft: "10px",
-                paddingRight: "10px",
-                marginLeft: "10px",
-                marginRight: "10px",
-                paddingTop: "10px",
-              }}
-              src="https://img.shields.io/badge/-jest-%23C21325?style=for-the-badge&logo=jest&logoColor=white"
-            />
+            <Badges />
           </div>
         </div>
       </motion.div>
     </div>
   );
 }
+
+Home.propTypes = {
+  isMobile: PropTypes.bool.isRequired,
+};
 
 export default Home;

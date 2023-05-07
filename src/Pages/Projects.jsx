@@ -1,3 +1,5 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { Carousel, Card, Stack } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
@@ -12,6 +14,7 @@ import {
   SiChakraui,
 } from "react-icons/si";
 import { RiVuejsFill } from "react-icons/ri";
+import ProjectCard from "../Components/ProjectCard";
 
 function Projects({ isMobile }) {
   return (
@@ -383,6 +386,13 @@ function Projects({ isMobile }) {
             style={{ height: 500, backgroundColor: "#fff7f0" }}
           >
             <Carousel.Item style={{ height: 500 }}>
+              <ProjectCard
+                image={"https://http.cat/200.jpg"}
+                title="lol"
+                description="lorem"
+                link="http.cat/200"
+                github="http.cat"
+              />
               <Stack
                 direction="horizontal"
                 className="h-100 justify-content-center align-items-center"
@@ -729,5 +739,9 @@ function Projects({ isMobile }) {
     </div>
   );
 }
+
+Projects.propTypes = {
+  isMobile: PropTypes.bool,
+};
 
 export default Projects;

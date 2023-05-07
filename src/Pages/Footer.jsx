@@ -1,8 +1,9 @@
+import React from "react";
+import PropTypes from "prop-types";
 import { FaLinkedin } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
 
 function Footer({ isMobile }) {
-  const year = new Date().getFullYear();
   return (
     <div>
       <footer
@@ -19,33 +20,35 @@ function Footer({ isMobile }) {
             justifyItems: "center",
             flexDirection: "column",
             alignItems: "center",
+            paddingBottom: "20px",
           }}
         >
           <div>
             <a
-              href="https://www.linkedin.com/in/ida-h%C3%A4gerth/"
+              href="https://www.linkedin.com/in/filip-stenstr%C3%B6m/"
+              rel="noreferrer"
               target="_blank"
               style={{ marginLeft: "10px", color: "#f686bd" }}
             >
               <FaLinkedin size={25} />
             </a>
             <a
-              href="https://github.com/idahagerth"
+              href="https://github.com/Stenstromen"
+              rel="noreferrer"
               target="_blank"
-              style={{ marginLeft: "10px", color: "#f686bd" }}
+              style={{ marginLeft: "10px", color: "#f686bd"}}
             >
               <TfiGithub size={25} />
             </a>
           </div>
-          <p
-            style={{ fontWeight: "bold", paddingTop: "10px", color: "#f686bd" }}
-          >
-            ©{year} Ida Hägerth{" "}
-          </p>
         </div>
       </footer>
     </div>
   );
 }
+
+Footer.propTypes = {
+  isMobile: PropTypes.bool,
+};
 
 export default Footer;
