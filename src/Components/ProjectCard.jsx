@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function ProjectCard({ image, title, description, link, github }) {
   return (
@@ -26,15 +27,29 @@ function ProjectCard({ image, title, description, link, github }) {
             target="_blank"
             style={{ marginLeft: "10px", color: "#f686bd" }}
           >
-            <h4>Link</h4>
-          </a>
-            <a href={github} rel="noreferrer" target="_blank">
-                <img src="img/github.png" style={{ width: "10%" }} />
+            <h4>Link to project</h4>
+          </a><br />
+            Check out the project on{" "}
+            <a
+              style={{ color: "black", fontWeight: "bold" }}
+              href={github}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Github!
             </a>
         </div>
       </div>
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+    image: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    link: PropTypes.string,
+    github: PropTypes.string,
+};
 
 export default ProjectCard;
