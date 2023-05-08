@@ -17,6 +17,7 @@ function Home({ isMobile }) {
       >
         <h1
           style={{
+            color: "#d8e2dc",
             paddingLeft: "5%",
             paddingTop: isMobile ? "15%" : "3%",
             fontSize: isMobile ? "40px" : "70px",
@@ -24,10 +25,10 @@ function Home({ isMobile }) {
         >
           Hello!
         </h1>
-        <h2 style={{ paddingLeft: "5%", fontSize: isMobile ? "22px" : "35px" }}>
+        <h2 style={{ color: "#d8e2dc", paddingLeft: "5%", fontSize: isMobile ? "22px" : "35px" }}>
           I&apos;m Filip - DevOps Engineer and Hobbyist Programmer.
         </h2>
-        <h3 style={{ paddingLeft: "5%" }}> - Based in Stockholm, Sweden.</h3>
+        <h3 style={{ paddingLeft: "5%", color: "#d8e2dc" }}> - Based in Stockholm, Sweden.</h3>
       </motion.div>
 
       <motion.div
@@ -42,8 +43,9 @@ function Home({ isMobile }) {
         <div style={{ display: "flex", justifyContent: "right" }}>
           <div
             style={{
-              width: isMobile ? "100%" : "40%",
-              paddingTop: isMobile ? "50%" : "11%",
+              width: isMobile ? "100%" : "70%",
+              paddingTop: isMobile ? "50%" : "13%",
+              
             }}
           >
             <Badges />

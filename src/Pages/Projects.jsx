@@ -1,27 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-//import { Carousel, Card, Stack } from "react-bootstrap";
 import { motion } from "framer-motion";
-/* import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
-import {
-  SiJavascript,
-  SiCsswizardry,
-  SiHtml5,
-  SiReact,
-  SiTypescript,
-  SiBootstrap,
-  SiGithub, 
-  SiChakraui,
-} from "react-icons/si";
-import { RiVuejsFill } from "react-icons/ri"; */
 import ProjectCard from "../Components/ProjectCard";
+import ProjectList from "./ProjectList";
 
 function Projects({ isMobile }) {
   return (
     <div
-      className="bg-opacity-25 container-fluid"
       style={{
-        backgroundColor: "#fff7f0",
+        //border: "solid 1px black",
+        width: "100%",
+        //backgroundColor: "#fff7f0",
+        backgroundColor: "#4f5d75",
         paddingTop: isMobile ? "10%" : null,
         paddingBottom: isMobile ? "34%" : null,
       }}
@@ -34,14 +24,30 @@ function Projects({ isMobile }) {
           ease: "easeIn",
           type: "spring",
         }}
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "flex-start",
+          paddingLeft: "5%",
+          paddingRight: "5%",
+        }}
       >
-        <ProjectCard
-                image={"https://http.cat/200.jpg"}
-                title="lol"
-                description="lorem"
-                link="http.cat/200"
-                github="http.cat"
-              />
+        {ProjectList.map(
+          ({ image, title, description, link, github }, index) => {
+            return (
+              <>
+                <ProjectCard
+                  key={index}
+                  image={image}
+                  title={title}
+                  description={description}
+                  link={link}
+                  github={github}
+                />
+              </>
+            );
+          }
+        )}
       </motion.div>
     </div>
   );

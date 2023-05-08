@@ -9,7 +9,7 @@ import NavBar from "./Pages/NavBar";
 import Footer from "./Pages/Footer";
 import { useEffect, useState } from "react";
 
-document.body.style = "background: #fff7f0;";
+document.body.style = "background: #4f5d75;";
 
 function App() {
   const [isMobile, setIsMobile] = useState(true);

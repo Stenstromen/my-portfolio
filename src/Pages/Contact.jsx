@@ -22,7 +22,7 @@ function Contact({ isMobile }) {
           paddingTop: isMobile ? "40%" : "8%",
         }}
       >
-        <h1> - Connect with me?!</h1>
+        <h1 style={{color: "#d8e2dc"}}> - Connect with me?!</h1>
       </div>
 
       <div

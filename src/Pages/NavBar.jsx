@@ -16,17 +16,17 @@ function NavBar({ isMobile }) {
           <Nav>
             <LinkContainer to="/">
               <Nav.Link style={{ color: "black" }} href="Home">
-                Home
+              <p style={{color: "#d8e2dc"}}>Home</p>
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to="/Projects">
-              <Nav.Link style={{ color: "black" }} href="Projects">
-                Projects
+              <Nav.Link style={{ color: "#d8e2dc" }} href="Projects">
+              <p style={{color: "#d8e2dc"}}>Projects</p>
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to="Contact">
-              <Nav.Link style={{ color: "black" }} href="Contact">
-                Contact
+              <Nav.Link style={{ color: "#d8e2dc" }} href="Contact">
+                <p style={{color: "#d8e2dc"}}>Contact</p>
               </Nav.Link>
             </LinkContainer>
           </Nav>

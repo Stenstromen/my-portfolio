@@ -2,11 +2,11 @@ import React from "react";
 
 function Badges() {
   const style = {
-    paddingLeft: "10px",
-    paddingRight: "10px",
-    marginLeft: "10px",
-    marginRight: "10px",
-    paddingTop: "10px",
+    paddingLeft:  "15px",
+    paddingRight: "15px",
+    marginLeft:   "15px",
+    marginRight:  "15px",
+    paddingTop:   "15px",
   };
   return (
     <>
