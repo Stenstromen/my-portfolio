@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ProjectCard({ isMobile, image, title, description, link, github }) {
-  const humanLink = link.replace(/https?:\/\//, "");
+  const humanLink = link.replace(/https?:\/\//, "").replace("github.com/Stenstromen/","")
   return (
     <div
       style={{
