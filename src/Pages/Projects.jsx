@@ -28,8 +28,8 @@ function Projects({ isMobile }) {
           display: "flex",
           flexWrap: "wrap",
           alignItems: "flex-start",
-          paddingLeft: "5%",
-          paddingRight: "5%",
+          paddingLeft: isMobile ? "0%" : "5%",
+          paddingRight: isMobile ? "0%" : "5%",
         }}
       >
         {ProjectList.map(
@@ -38,6 +38,7 @@ function Projects({ isMobile }) {
               <>
                 <ProjectCard
                   key={index}
+                  isMobile={isMobile}
                   image={image}
                   title={title}
                   description={description}
