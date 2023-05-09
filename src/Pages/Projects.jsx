@@ -8,12 +8,10 @@ function Projects({ isMobile }) {
   return (
     <div
       style={{
-        //border: "solid 1px black",
         width: "100%",
-        //backgroundColor: "#fff7f0",
         backgroundColor: "#4f5d75",
-        paddingTop: isMobile ? "10%" : null,
-        paddingBottom: isMobile ? "34%" : null,
+        paddingTop: isMobile ? "2%" : null,
+        paddingBottom: isMobile ? "5%" : "5%",
       }}
     >
       <motion.div
