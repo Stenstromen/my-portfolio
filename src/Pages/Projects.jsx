@@ -31,7 +31,7 @@ function Projects({ isMobile }) {
         }}
       >
         {ProjectList.map(
-          ({ image, title, description, link, github }, index) => {
+          ({ image, title, description, link, github, badges }, index) => {
             return (
               <>
                 <ProjectCard
@@ -42,6 +42,7 @@ function Projects({ isMobile }) {
                   description={description}
                   link={link}
                   github={github}
+                  badges={badges}
                 />
               </>
             );
