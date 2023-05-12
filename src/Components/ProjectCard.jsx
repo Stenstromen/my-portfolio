@@ -46,7 +46,7 @@ function ProjectCard({
         {badges.map((badge, index) => {
           return (
             <>
-              <img key={index} style={{paddingLeft:  "1px", paddingBottom: "1px"}} src={badge} />
+              <img key={index} style={{paddingLeft:  "1px", paddingBottom: "1px"}} alt={badge} src={badge} />
             </>
           );
         })}

@@ -1,24 +1,4 @@
-const Badges = {
-  HTML: "https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white",
-  CSS: "https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white",
-  JS: "https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E",
-  TS: "https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white",
-  REACTJS:
-    "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
-  NODEJS:
-    "https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white",
-  SOCKETIO:
-    "https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101",
-  GO: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
-  MARIADB:
-    "https://img.shields.io/badge/MariaDB-%2300ADD8.svg?style=for-the-badge&logo=mariadb&logoColor=white",
-  KUBERNETES:
-    "https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white",
-  WORDPRESS:
-    "https://img.shields.io/badge/WordPress-%23117AC9.svg?style=for-the-badge&logo=WordPress&logoColor=white",
-  CLOUDFLARE:
-    "https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white",
-};
+import BadgesList from "../Components/BadgesList";
 
 const ProjectList = [
   {
@@ -27,7 +7,7 @@ const ProjectList = [
     description: "List amount/View brand new .SE and .NU Domains.",
     link: "https://axfr.se",
     github: "https://github.com/Stenstromen/axfr-frontend",
-    badges: [Badges.REACTJS, Badges.GO, Badges.MARIADB, Badges.KUBERNETES],
+    badges: [BadgesList.REACTJS, BadgesList.GO, BadgesList.MARIADB, BadgesList.KUBERNETES],
   },
   {
     image: "https://battlefield2042.se/bf2042ico.png",
@@ -35,7 +15,7 @@ const ProjectList = [
     description: "Battlefield 2042 Stats page",
     link: "https://battlefield2042.se",
     github: "https://github.com/Stenstromen/bf2042stats",
-    badges: [Badges.REACTJS, Badges.TS, Badges.CLOUDFLARE],
+    badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.CLOUDFLARE],
   },
   {
     image:
@@ -44,7 +24,7 @@ const ProjectList = [
     description: "CaveStory game fan page... Simple enough.",
     link: "https://cavestory.se",
     github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [Badges.HTML, Badges.CSS, Badges.CLOUDFLARE],
+    badges: [BadgesList.HTML, BadgesList.CSS, BadgesList.CLOUDFLARE],
   },
   {
     image:
@@ -53,7 +33,7 @@ const ProjectList = [
     description: "Fully featured NyanCat themed chat client and server.",
     link: "https://chat.nyancat.se",
     github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [Badges.REACTJS, Badges.NODEJS, Badges.SOCKETIO, Badges.KUBERNETES],
+    badges: [BadgesList.REACTJS, BadgesList.NODEJS, BadgesList.SOCKETIO, BadgesList.KUBERNETES],
   },
   {
     image: "https://filosofiskaeleonora.se/pusheen-cat.png",
@@ -62,7 +42,7 @@ const ProjectList = [
       "I took the Red Pill, but now I have to live the Blue Pill life.",
     link: "https://filosofiskaeleonora.se",
     github: "https://github.com/Stenstromen/filosofiskaeleonora",
-    badges: [Badges.REACTJS, Badges.CLOUDFLARE],
+    badges: [BadgesList.REACTJS, BadgesList.CLOUDFLARE],
   },
   {
     image:
@@ -72,7 +52,7 @@ const ProjectList = [
       "API server for listing beautiful flowers, requires registration.",
     link: "https://flower.api.stenstromen.se/readme",
     github: "https://github.com/Stenstromen/flowerapi",
-    badges: [Badges.NODEJS, Badges.KUBERNETES],
+    badges: [BadgesList.NODEJS, BadgesList.KUBERNETES],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/laptop_1f4bb.png",
@@ -80,7 +60,7 @@ const ProjectList = [
     description: "Get current public IP (try it with curl -4 || -6).",
     link: "http://ip.addr.se",
     github: "https://github.com/Stenstromen/gomyip",
-    badges: [Badges.GO, Badges.KUBERNETES],
+    badges: [BadgesList.GO, BadgesList.KUBERNETES],
   },
   {
     image:
@@ -90,12 +70,12 @@ const ProjectList = [
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
     badges: [
-      Badges.HTML,
-      Badges.CSS,
-      Badges.JS,
-      Badges.NODEJS,
-      Badges.SOCKETIO,
-      Badges.KUBERNETES,
+      BadgesList.HTML,
+      BadgesList.CSS,
+      BadgesList.JS,
+      BadgesList.NODEJS,
+      BadgesList.SOCKETIO,
+      BadgesList.KUBERNETES,
     ],
   },
   {
@@ -104,7 +84,7 @@ const ProjectList = [
     title: "Peppoj.net",
     description: "Personal blog with useful guides.",
     link: "https://www.peppoj.net",
-    badges: [Badges.WORDPRESS, Badges.KUBERNETES],
+    badges: [BadgesList.WORDPRESS, BadgesList.KUBERNETES],
   },
   {
     image:
@@ -113,7 +93,7 @@ const ProjectList = [
     description: "Generate secure passwords.",
     link: "https://pwgen.cz",
     github: "https://github.com/Stenstromen/pwgen",
-    badges: [Badges.REACTJS, Badges.TS],
+    badges: [BadgesList.REACTJS, BadgesList.TS],
   },
   {
     image:
@@ -122,7 +102,7 @@ const ProjectList = [
     description: "Pusheen the cat!",
     link: "http://pusheen.se",
     github: "https://github.com/Stenstromen/pusheen",
-    badges: [Badges.REACTJS, Badges.CLOUDFLARE],
+    badges: [BadgesList.REACTJS, BadgesList.CLOUDFLARE],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/fire_1f525.png",
@@ -131,7 +111,7 @@ const ProjectList = [
       "Create temporary, shareable, messages. Only readable once. Read-Then-Burn.",
     link: "http://readthenburn.se",
     github: "https://github.com/Stenstromen/readthenburn-frontend",
-    badges: [Badges.REACTJS, Badges.GO, Badges.MARIADB, Badges.KUBERNETES],
+    badges: [BadgesList.REACTJS, BadgesList.GO, BadgesList.MARIADB, BadgesList.KUBERNETES],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -140,7 +120,7 @@ const ProjectList = [
       "Go binary for creating/updating MTA-STS records on Cloudflare.",
     link: "https://github.com/Stenstromen/gospfflare/releases/latest/",
     github: "https://github.com/Stenstromen/gospfflare",
-    badges: [Badges.GO, Badges.CLOUDFLARE],
+    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -149,7 +129,7 @@ const ProjectList = [
       "Go binary for creating/updating MTA-STS records on Cloudflare, and create the accompanying Nginx configuration.",
     link: "https://github.com/Stenstromen/gomtastsflare/releases/latest/",
     github: "https://github.com/Stenstromen/gomtastsflare",
-    badges: [Badges.GO, Badges.CLOUDFLARE],
+    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -158,7 +138,7 @@ const ProjectList = [
       "Go binary for updating TLSA DANE record on cloudflare from x509 Certificate.",
     link: "https://github.com/Stenstromen/gotlsaflare/releases/latest/",
     github: "https://github.com/Stenstromen/gotlsaflare",
-    badges: [Badges.GO, Badges.CLOUDFLARE],
+    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -166,7 +146,7 @@ const ProjectList = [
     description: "Go binary for creating/updating DKIM records on Cloudflare.",
     link: "https://github.com/Stenstromen/godkimflare/releases/latest/",
     github: "https://github.com/Stenstromen/godkimflare",
-    badges: [Badges.GO, Badges.CLOUDFLARE],
+    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
   },
   {
     image:
@@ -177,12 +157,12 @@ const ProjectList = [
     link: "https://warez.lolcat.se",
     github: "https://github.com/Stenstromen/lolwarez",
     badges: [
-      Badges.HTML,
-      Badges.CSS,
-      Badges.JS,
-      Badges.NODEJS,
-      Badges.MARIADB,
-      Badges.KUBERNETES,
+      BadgesList.HTML,
+      BadgesList.CSS,
+      BadgesList.JS,
+      BadgesList.NODEJS,
+      BadgesList.MARIADB,
+      BadgesList.KUBERNETES,
     ],
   },
 ];
