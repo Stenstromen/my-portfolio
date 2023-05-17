@@ -39,7 +39,7 @@ function Contact({ isMobile }) {
             rel="noreferrer"
             target="_blank"
           >
-            <img src="img/li.png" style={{ width: "30%" }} />
+            <img src="https://stenstromen.se/img/li.png" style={{ width: "30%" }} />
           </a>
         </div>
       </div>
