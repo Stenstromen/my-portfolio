@@ -1,7 +1,9 @@
+/* eslint-disable no-undef */
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
@@ -25,13 +27,15 @@ function App() {
   }, []);
   return (
     <div>
-      <NavBar isMobile={isMobile} />
-      <Routes>
-        <Route path="/Projects" element={<Projects isMobile={isMobile} />} />
-        <Route path="/" element={<Home isMobile={isMobile} />} />
-        <Route path="/Contact" element={<Contact isMobile={isMobile} />} />
-      </Routes>
-      <Footer isMobile={isMobile} />
+      <Router basename={process.env.PUBLIC_URL}>
+        <NavBar isMobile={isMobile} />
+        <Routes>
+          <Route path="/Projects" element={<Projects isMobile={isMobile} />} />
+          <Route path="/" element={<Home isMobile={isMobile} />} />
+          <Route path="/Contact" element={<Contact isMobile={isMobile} />} />
+        </Routes>
+        <Footer isMobile={isMobile} />
+      </Router>
     </div>
   );
 }
