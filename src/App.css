@@ -5,6 +5,14 @@ body {
   background-color: var(--bs-body-bg);
 }
 
+.nav-link.active {
+  color: white !important; /* Replace #lighterColor with the actual color value */
+}
+
+.nav-link {
+  color: #d8e2dc !important; /* Replace #darkerColor with the actual color value */
+}
+
 .App {
   text-align: center;
 }
