@@ -1,9 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import Badges from "../Components/Badges";
 
-function Home({ isMobile }) {
+function Home() {
   return (
     <div>
       <motion.div
@@ -15,20 +14,11 @@ function Home({ isMobile }) {
           type: "spring",
         }}
       >
-        <h1
-          style={{
-            color: "#d8e2dc",
-            paddingLeft: "5%",
-            paddingTop: isMobile ? "15%" : "3%",
-            fontSize: isMobile ? "40px" : "70px",
-          }}
-        >
-          Hello!
-        </h1>
-        <h2 style={{ color: "#d8e2dc", paddingLeft: "5%", fontSize: isMobile ? "22px" : "35px" }}>
+        <h1 className="HomeH1">Hello!</h1>
+        <h2 className="HomeH2">
           I&apos;m Filip - DevOps Engineer and Hobbyist Programmer.
         </h2>
-        <h3 style={{ paddingLeft: "5%", color: "#d8e2dc" }}> - Based in Stockholm, Sweden.</h3>
+        <h3 className="HomeH3"> - Based in Stockholm, Sweden.</h3>
       </motion.div>
 
       <motion.div
@@ -40,13 +30,9 @@ function Home({ isMobile }) {
           type: "spring",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "right" }}>
+        <div className="BadgesContainer">
           <div
-            style={{
-              width: isMobile ? "100%" : "70%",
-              paddingTop: isMobile ? "50%" : "13%",
-              
-            }}
+            className="Badges"
           >
             <Badges />
           </div>
@@ -55,9 +41,5 @@ function Home({ isMobile }) {
     </div>
   );
 }
-
-Home.propTypes = {
-  isMobile: PropTypes.bool.isRequired,
-};
 
 export default Home;

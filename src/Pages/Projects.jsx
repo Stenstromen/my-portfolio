@@ -1,18 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 import ProjectCard from "../Components/ProjectCard";
 import ProjectList from "./ProjectList";
 
-function Projects({ isMobile }) {
+function Projects() {
   return (
     <div
-      style={{
-        width: "100%",
-        backgroundColor: "#4f5d75",
-        paddingTop: isMobile ? "2%" : null,
-        paddingBottom: isMobile ? "5%" : "5%",
-      }}
+      className="Projects"
     >
       <motion.div
         initial={{ y: "+100%", opacity: 0 }}
@@ -22,13 +16,7 @@ function Projects({ isMobile }) {
           ease: "easeIn",
           type: "spring",
         }}
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "flex-start",
-          paddingLeft: isMobile ? "0%" : "5%",
-          paddingRight: isMobile ? "0%" : "5%",
-        }}
+        className="ProjectsList"
       >
         {ProjectList.map(
           ({ image, title, description, link, github, badges }, index) => {
@@ -36,7 +24,6 @@ function Projects({ isMobile }) {
               <>
                 <ProjectCard
                   key={index}
-                  isMobile={isMobile}
                   image={image}
                   title={title}
                   description={description}
@@ -52,9 +39,5 @@ function Projects({ isMobile }) {
     </div>
   );
 }
-
-Projects.propTypes = {
-  isMobile: PropTypes.bool,
-};
 
 export default Projects;

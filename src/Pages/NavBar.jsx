@@ -1,19 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 
-function NavBar({ isMobile }) {
+function NavBar() {
   return (
     <div>
-      <Navbar bg="#22223b" style={{ fontSize: "25px" }}>
+      <Navbar bg="#22223b" className="Nav-font">
         <Container className="justify-content-center">
-          {isMobile ? null : (
-            <Nav className="me-auto justify-content-center"></Nav>
-          )}
-          <Nav>
+          <Nav className="Nav-filler">
             <LinkContainer to="/">
               <Nav.Link className="nav-link">Home</Nav.Link>
             </LinkContainer>
@@ -29,9 +25,5 @@ function NavBar({ isMobile }) {
     </div>
   );
 }
-
-NavBar.propTypes = {
-  isMobile: PropTypes.bool,
-};
 
 export default NavBar;
