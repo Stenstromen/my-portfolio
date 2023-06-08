@@ -125,7 +125,7 @@ const ProjectList = [
     image: "https://em-content.zobj.net/thumbs/240/apple/354/memo_1f4dd.png",
     title: "Snapnote",
     description: "Open source note taking application.",
-    link: "https://note.addr.se",
+    link: "https://snapnote.online",
     github: "https://github.com/Stenstromen/snapnote",
     badges: [REACTJS, TS, GO, MARIADB, KUBERNETES],
   },
