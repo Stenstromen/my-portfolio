@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Badge from "./Badge";
 
 function ProjectCard({ image, title, description, link, github, badges }) {
   const humanLink = link
@@ -15,7 +16,7 @@ function ProjectCard({ image, title, description, link, github, badges }) {
       <div className="ProjectCardBadges">
         {badges.map((badge, index) => {
           return (
-            <img key={index} className="ProjectBadge" alt={badge} src={badge} />
+            <Badge key={index} className="ProjectBadge" alt={badge} src={badge} />
           );
         })}
       </div>
