@@ -13,6 +13,7 @@ function Footer() {
               rel="noreferrer"
               target="_blank"
               className="FooterLink"
+              aria-label="LinkedIn"
             >
               <FaLinkedin size={25} />
             </a>
@@ -21,6 +22,7 @@ function Footer() {
               rel="noreferrer"
               target="_blank"
               className="FooterLink"
+              aria-label="GitHub"
             >
               <TfiGithub size={25} />
             </a>
