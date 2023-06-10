@@ -12,6 +12,7 @@ const {
   REACTJS,
   KUBERNETES,
   GO,
+  PY,
   CLOUDFLARE,
 } = BadgesList;
 
@@ -85,6 +86,15 @@ const ProjectList = [
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
     badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
+  },
+  {
+    image: "https://lens.addr.se/assets/logo-2fd1099d.svg",
+    title: "OpenVision",
+    description:
+      "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3.",
+    link: "https://lens.addr.se",
+    github: "https://github.com/Stenstromen/openvision",
+    badges: [REACTJS, TS, PY, KUBERNETES],
   },
   {
     image:
