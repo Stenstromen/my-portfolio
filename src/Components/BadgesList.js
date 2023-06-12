@@ -67,7 +67,7 @@ const BadgesList = {
   PYTHON: {
     name: "PYTHON",
     width: "127.5px",
-    src: "https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white",
+    src: "https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54",
   },
   ALPINE: {
     name: "ALPINE",
