@@ -16,7 +16,7 @@ function ProjectCard({ image, title, description, link, github, badges }) {
       <p className="ProjectCardDescription">{description}</p>
       <div className="ProjectCardBadges">
         {badges.map((badge, index) => {
-          const width = badge?.width;
+          const width = parseInt(badge?.width) - 29;
           const alt = badge?.name;
           const src = badge?.src;
           return (
@@ -25,7 +25,7 @@ function ProjectCard({ image, title, description, link, github, badges }) {
               className="ProjectBadge"
               alt={alt}
               width={width}
-              height="43px"
+              height="28px"
               src={src}
             />
           );
