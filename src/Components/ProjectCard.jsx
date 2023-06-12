@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import PropTypes from "prop-types";
 import Badge from "./Badge";
@@ -9,14 +10,24 @@ function ProjectCard({ image, title, description, link, github, badges }) {
   return (
     <div className="ProjectCard">
       <div className="ProjectCardContent">
-        <img className="ProjectCardImage" src={image} />
+        <img className="ProjectCardImage" width="196.19px" height="196.19px" alt={title} src={image} />
       </div>
       <h3 className="ProjectCardTitle">{title}</h3>
       <p className="ProjectCardDescription">{description}</p>
       <div className="ProjectCardBadges">
         {badges.map((badge, index) => {
+          const width = badge?.width;
+          const alt = badge?.name;
+          const src = badge?.src;
           return (
-            <Badge key={index} className="ProjectBadge" alt={badge} src={badge} />
+            <Badge
+              key={index}
+              className="ProjectBadge"
+              alt={alt}
+              width={width}
+              height="43px"
+              src={src}
+            />
           );
         })}
       </div>
@@ -55,7 +66,7 @@ ProjectCard.propTypes = {
   description: PropTypes.string,
   link: PropTypes.string,
   github: PropTypes.string,
-  badges: PropTypes.array,
+  badges: PropTypes.arrayOf(PropTypes.object),
 };
 
 export default ProjectCard;

@@ -24,8 +24,9 @@ function Contact() {
             href="https://www.linkedin.com/in/filip-stenstr%C3%B6m/"
             rel="noreferrer"
             target="_blank"
+            aria-label="LinkedIn"
           >
-            <img src={LinkedInImg} className="LinkedIn" />
+            <img src={LinkedInImg} className="LinkedIn" alt="LinkedIn" />
           </a>
         </div>
       </div>
