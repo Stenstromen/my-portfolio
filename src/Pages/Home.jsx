@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Badges from "../Components/Badges";
 
 function Home() {
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
   return (
-    <div>
+    <div
+      style={{
+        overflowX: "hidden",
+      }}
+    >
       <motion.div
-        initial={{ y: "+100%", opacity: 0 }}
-        animate={{ y: 1, opacity: 1 }}
+        initial={{ y: "+400px", opacity: 0 }}
+        animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
           duration: 1.5,
           ease: "easeIn",
@@ -22,8 +31,8 @@ function Home() {
       </motion.div>
 
       <motion.div
-        initial={{ x: "+100%", opacity: 0 }}
-        animate={{ x: 1, opacity: 1 }}
+        initial={{ x: "+1000px", opacity: 0 }}
+        animate={{ x: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
           duration: 1.5,
           ease: "easeIn",
@@ -31,9 +40,7 @@ function Home() {
         }}
       >
         <div className="BadgesContainer">
-          <div
-            className="Badges"
-          >
+          <div className="Badges">
             <Badges />
           </div>
         </div>

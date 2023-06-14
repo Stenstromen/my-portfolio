@@ -1,4 +1,5 @@
-body {
+body,
+html {
   background-color: #4f5d75 !important;
 }
 
@@ -245,7 +246,7 @@ body {
   }
 
   .Badges {
-    width: 100%;
+    width: 380px;
     padding-top: 50%;
   }
 

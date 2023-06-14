@@ -4,7 +4,6 @@ import Badge from "./Badge";
 
 function Badges() {
   const BadgesArray = Object.entries(BadgesList);
-  console.log(BadgesArray);
   return (
     <>
       {BadgesArray.map((badge, index) => {

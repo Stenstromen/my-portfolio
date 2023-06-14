@@ -1,21 +1,5 @@
 import BadgesList from "../Components/BadgesList";
 
-/* const {
-  //BadgesList.HTML,
-  //BadgesList.,
-  //JS,
-  //BadgesList.TS,
-  //BadgesList.SOCKETIO,
-  //BadgesList.NODEJS,
-  //  BadgesList.MARIADB,
- //WORDPRESS,
-  //REACTJS,
-  //BadgesList.KUBERNETES,
-  //GO,
-  //PY,
-  //BadgesList.CLOUDFLARE,
-} = BadgesList; */
-
 const ProjectList = [
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/memo_1f4dd.png",
@@ -166,7 +150,7 @@ const ProjectList = [
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
-    title: "GoMTA-SBadgesList.TSFlare",
+    title: "GoMTA-STSFlare",
     description:
       "Go binary for creating/updating MTA-SBadgesList.TS records on Cloudflare, and create the accompanying Nginx configuration.",
     link: "https://github.com/Stenstromen/gomtastsflare/releases/latest/",

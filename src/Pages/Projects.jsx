@@ -1,16 +1,22 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "../Components/ProjectCard";
 import ProjectList from "./ProjectList";
 
 function Projects() {
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+  
   return (
     <div
       className="Projects"
     >
       <motion.div
-        initial={{ y: "+100%", opacity: 0 }}
-        animate={{ y: 1, opacity: 1 }}
+        initial={{ y: "+1000px", opacity: 0 }}
+        animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
           duration: 1.5,
           ease: "easeIn",
@@ -19,11 +25,11 @@ function Projects() {
         className="ProjectsList"
       >
         {ProjectList.map(
-          ({ image, title, description, link, github, badges }, index) => {
+          ({ image, title, description, link, github, badges }) => {
             return (
               <>
                 <ProjectCard
-                  key={index}
+                  key={title}
                   image={image}
                   title={title}
                   description={description}

@@ -19,7 +19,6 @@ function ProjectCard({ image, title, description, link, github, badges }) {
           const width = parseInt(badge?.width) - 29;
           const alt = badge?.name;
           const src = badge?.src;
-          console.log(alt, src, width)
           return (
             <Badge
               key={index}
