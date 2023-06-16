@@ -2,6 +2,7 @@
 import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Head from "./Components/Head";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Projects from "./Pages/Projects";
@@ -22,6 +23,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
+      <Head />
     </div>
   );
 }
