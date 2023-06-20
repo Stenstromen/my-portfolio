@@ -80,7 +80,7 @@ const ProjectList = [
     image: "https://lens.addr.se/assets/logo-2fd1099d.svg",
     title: "OpenVision",
     description:
-      "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3.",
+      "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3 model in TensorflowJs.",
     link: "https://lens.addr.se",
     github: "https://github.com/Stenstromen/openvision",
     badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.PYTHON, BadgesList.KUBERNETES],
