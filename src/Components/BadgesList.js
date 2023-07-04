@@ -74,6 +74,11 @@ const BadgesList = {
     width: "160.5px",
     src: "https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white",
   },
+  SHELL: {
+    name: "SHELL",
+    width: "170px",
+    src: "https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white",
+  },
   ALPINE: {
     name: "ALPINE",
     width: "170px",

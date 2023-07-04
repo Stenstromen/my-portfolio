@@ -46,6 +46,16 @@ const ProjectList = [
     ],
   },
   {
+    image:
+      "https://em-content.zobj.net/thumbs/320/apple/354/floppy-disk_1f4be.png",
+    title: "DockerCTX",
+    description:
+      "Rewrite of ahmetb's 'kubectx' utility. Easily switch between Docker contexts.",
+      link: "https://github.com/Stenstromen/dockerctx/releases/latest/",
+    github: "https://github.com/Stenstromen/dockerctx",
+    badges: [BadgesList.SHELL],
+  },
+  {
     image: "https://filosofiskaeleonora.se/pusheen-cat.png",
     title: "Filosofiska Eleonora",
     description:
