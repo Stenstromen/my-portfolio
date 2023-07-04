@@ -38,7 +38,12 @@ const ProjectList = [
     description: "Fully featured NyanCat themed chat client and server.",
     link: "https://chat.nyancat.se",
     github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [BadgesList.REACTJS, BadgesList.NODEJS, BadgesList.SOCKETIO, BadgesList.KUBERNETES],
+    badges: [
+      BadgesList.REACTJS,
+      BadgesList.NODEJS,
+      BadgesList.SOCKETIO,
+      BadgesList.KUBERNETES,
+    ],
   },
   {
     image: "https://filosofiskaeleonora.se/pusheen-cat.png",
@@ -74,10 +79,17 @@ const ProjectList = [
     description: "Share/Live share current location.",
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
-    badges: [BadgesList.HTML, BadgesList.CSS, BadgesList.JS, BadgesList.NODEJS, BadgesList.SOCKETIO, BadgesList.KUBERNETES],
+    badges: [
+      BadgesList.HTML,
+      BadgesList.CSS,
+      BadgesList.JS,
+      BadgesList.NODEJS,
+      BadgesList.SOCKETIO,
+      BadgesList.KUBERNETES,
+    ],
   },
   {
-    image: "https://lens.addr.se/assets/logo-2fd1099d.svg",
+    image: "https://openvision.boo/assets/logo-2fd1099d.svg",
     title: "OpenVision",
     description:
       "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3 model in TensorflowJs.",
@@ -140,6 +152,20 @@ const ProjectList = [
     ],
   },
   {
+    image: "https://twaddle.page/assets/twaddle-c3415e3b.svg",
+    title: "Twaddle",
+    description: "Generate gibberish using the distilGP2 model.",
+    link: "https://twaddle.page",
+    github: "https://github.com/Stenstromen/twaddle-frontend",
+    badges: [
+      BadgesList.REACTJS,
+      BadgesList.TS,
+      BadgesList.PYTHON,
+      BadgesList.TENSORFLOW,
+      BadgesList.KUBERNETES,
+    ],
+  },
+  {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
     title: "GoSPFFlare",
     description:
@@ -182,7 +208,22 @@ const ProjectList = [
       "Secure and encrypted (including filename) file-sharing service.",
     link: "https://warez.lolcat.se",
     github: "https://github.com/Stenstromen/lolwarez",
-    badges: [BadgesList.HTML, BadgesList.CSS, BadgesList.JS, BadgesList.NODEJS, BadgesList.MARIADB, BadgesList.KUBERNETES],
+    badges: [
+      BadgesList.HTML,
+      BadgesList.CSS,
+      BadgesList.JS,
+      BadgesList.NODEJS,
+      BadgesList.MARIADB,
+      BadgesList.KUBERNETES,
+    ],
+  },
+  {
+    image: "https://arfenhou.se/logo.jpg",
+    title: "Arfenhouse",
+    description: "Arfenhouse fan page.",
+    link: "https://arfenhou.se",
+    github: "https://github.com/Stenstromen/arfenhouse",
+    badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.CLOUDFLARE],
   },
 ];
 
