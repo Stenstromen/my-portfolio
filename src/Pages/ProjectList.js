@@ -83,6 +83,14 @@ const ProjectList = [
     badges: [BadgesList.GO, BadgesList.KUBERNETES],
   },
   {
+    image: "https://em-content.zobj.net/thumbs/240/apple/354/spouting-whale_1f433.png",
+    title: "NcRegistry",
+    description: "NcRegistry Go binary provides users with an interactive prompt to select registries, view repositories, and manage Docker images and tags.",
+    link: "https://github.com/Stenstromen/ncregistry/releases/latest/",
+    github: "https://github.com/Stenstromen/ncregistry",
+    badges: [BadgesList.GO, BadgesList.DOCKER],
+  },
+  {
     image:
       "https://em-content.zobj.net/thumbs/240/apple/354/globe-showing-europe-africa_1f30d.png",
     title: "Noclip.se",
