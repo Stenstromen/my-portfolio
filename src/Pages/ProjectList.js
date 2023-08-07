@@ -1,3 +1,4 @@
+import FlareIP from "../img/flareip.svg";
 import BadgesList from "../Components/BadgesList";
 
 const ProjectList = [
@@ -65,6 +66,14 @@ const ProjectList = [
     badges: [BadgesList.REACTJS, BadgesList.CLOUDFLARE],
   },
   {
+    image: FlareIP,
+    title: "FlareIP",
+    description: "Cloudflare Worker to get the client IP address.",
+    link: "https://addr.se/readme",
+    github: "https://github.com/Stenstromen/flareip",
+    badges: [BadgesList.TS, BadgesList.CLOUDFLARE],
+  },
+  {
     image:
       "https://em-content.zobj.net/thumbs/240/apple/354/red-heart_2764-fe0f.png",
     title: "Flower.API",
@@ -73,14 +82,6 @@ const ProjectList = [
     link: "https://flower.api.stenstromen.se/readme",
     github: "https://github.com/Stenstromen/flowerapi",
     badges: [BadgesList.NODEJS, BadgesList.KUBERNETES],
-  },
-  {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/laptop_1f4bb.png",
-    title: "IP.Addr.se",
-    description: "Get current public IP (try it with curl -4 || -6).",
-    link: "http://ip.addr.se",
-    github: "https://github.com/Stenstromen/gomyip",
-    badges: [BadgesList.GO, BadgesList.KUBERNETES],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/spouting-whale_1f433.png",
@@ -217,6 +218,14 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/godkimflare/releases/latest/",
     github: "https://github.com/Stenstromen/godkimflare",
     badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
+  },
+  {
+    image: "https://em-content.zobj.net/thumbs/240/apple/354/laptop_1f4bb.png",
+    title: "GoMyIP",
+    description: "ifconfig.co copycat, written in Go",
+    link: "https://github.com/Stenstromen/gomyip",
+    github: "https://github.com/Stenstromen/gomyip",
+    badges: [BadgesList.GO, BadgesList.KUBERNETES],
   },
   {
     image:
