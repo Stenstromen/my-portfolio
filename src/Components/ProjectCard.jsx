@@ -7,10 +7,17 @@ function ProjectCard({ image, title, description, link, github, badges }) {
   const humanLink = link
     .replace(/https?:\/\//, "")
     .replace("github.com/Stenstromen/", "");
+  const lowercaseTitle = title.toLowerCase();
   return (
-    <div className="ProjectCard">
+    <div className="ProjectCard" id={lowercaseTitle}>
       <div className="ProjectCardContent">
-        <img className="ProjectCardImage" width="196.19px" height="196.19px" alt={title} src={image} />
+        <img
+          className="ProjectCardImage"
+          width="196.19px"
+          height="196.19px"
+          alt={title}
+          src={image}
+        />
       </div>
       <h3 className="ProjectCardTitle">{title}</h3>
       <p className="ProjectCardDescription">{description}</p>

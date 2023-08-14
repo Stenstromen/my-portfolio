@@ -66,8 +66,8 @@ html {
 }
 
 .ProjectCard {
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 12px;
+  margin-top: 20px;
   display: flex;
   flex-flow: column;
   background-color: #ffffff;
