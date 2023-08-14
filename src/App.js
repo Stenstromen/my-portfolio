@@ -13,15 +13,17 @@ import Footer from "./Pages/Footer";
 
 function App() {
   return (
-    <div>
-      <Head /> 
+    <div className="AppContainer">
+      <Head />
       <Router basename={process.env.PUBLIC_URL}>
         <NavBar />
-        <Routes>
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
+        <div className="MainContent">
+          <Routes>
+            <Route path="/Projects" element={<Projects />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+        </div>
         <Footer />
       </Router>
       <Head />

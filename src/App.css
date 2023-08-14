@@ -4,11 +4,11 @@ html {
 }
 
 .nav-link.active {
-  color: white !important; /* Replace #lighterColor with the actual color value */
+  color: white !important;
 }
 
 .nav-link {
-  color: #d8e2dc !important; /* Replace #darkerColor with the actual color value */
+  color: #d8e2dc !important;
 }
 
 .App {
@@ -193,9 +193,17 @@ html {
   width: 30%;
 }
 
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.MainContent {
+  flex: 1;
+}
+
 .Footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding-top: none;
 }
