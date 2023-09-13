@@ -6,7 +6,8 @@ import Badge from "./Badge";
 function ProjectCard({ image, title, description, link, github, badges }) {
   const humanLink = link
     .replace(/https?:\/\//, "")
-    .replace("github.com/Stenstromen/", "");
+    .replace("github.com/Stenstromen/", "")
+    .replace(/apps\.apple\.com\/[^ ]+/g, 'View on Apple AppStore');
   const lowercaseTitle = title.toLowerCase();
   return (
     <div className="ProjectCard" id={lowercaseTitle}>

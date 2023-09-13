@@ -1,4 +1,5 @@
 import FlareIP from "../img/flareip.svg";
+import registryport from "../img/registryport.png";
 import BadgesList from "../Components/BadgesList";
 
 const ProjectList = [
@@ -106,6 +107,14 @@ const ProjectList = [
       BadgesList.SOCKETIO,
       BadgesList.KUBERNETES,
     ],
+  },
+  {
+    image: registryport,
+    title: "RegistryPort",
+    description: "RegistryPort brings the power of Docker Registries to the palm of your hand.",
+    link: "https://apps.apple.com/us/app/registryport/id6464222587",
+    github: "https://github.com/Stenstromen/registryport",
+    badges: [BadgesList.REACTNATIVE, BadgesList.TS, BadgesList.DOCKER],
   },
   {
     image: "https://openvision.boo/assets/logo-2fd1099d.svg",
