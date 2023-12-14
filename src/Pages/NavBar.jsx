@@ -19,9 +19,6 @@ function NavBar() {
             <LinkContainer to="/Contact">
               <Nav.Link className="nav-link">Contact</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/k8s">
-              <Nav.Link className="nav-link">k8s</Nav.Link>
-            </LinkContainer>
           </Nav>
         </Container>
       </Navbar>

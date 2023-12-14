@@ -45,6 +45,7 @@ function Home() {
           </div>
         </div>
       </motion.div>
+      <a href="/k8s"></a>
     </div>
   );
 }
