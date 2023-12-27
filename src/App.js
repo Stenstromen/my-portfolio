@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Head from "./Components/Head";
@@ -9,15 +9,18 @@ import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import K8s from "./Pages/K8s";
-import NavBar from "./Pages/NavBar";
-import Footer from "./Pages/Footer";
 
 function App() {
+  const NavBar = lazy(() => import("./Pages/NavBar"));
+  const Footer = lazy(() => import("./Pages/Footer"));
+
   return (
     <div className="AppContainer">
       <Head />
       <Router basename={process.env.PUBLIC_URL}>
-        <NavBar />
+        <Suspense fallback={<div>Loading...</div>}>
+          <NavBar />
+        </Suspense>
         <div className="MainContent">
           <Routes>
             <Route path="/Projects" element={<Projects />} />
@@ -26,7 +29,9 @@ function App() {
             <Route path="/k8s" element={<K8s />} />
           </Routes>
         </div>
-        <Footer />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Footer />
+        </Suspense>
       </Router>
       <Head />
     </div>
