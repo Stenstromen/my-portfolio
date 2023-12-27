@@ -64,6 +64,11 @@ const BadgesList = {
     width: "92.5px",
     src: "https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white",
   },
+  RUST: {
+    name: "RUST",
+    width: "100px",
+    src: "https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white",
+  },
   PYTHON: {
     name: "PYTHON",
     width: "127.5px",
