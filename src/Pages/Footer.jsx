@@ -1,6 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaUserSecret } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
 
 function Footer() {
@@ -35,6 +35,15 @@ function Footer() {
               aria-label="Email"
             >
               <MdEmail size={25} />
+            </a>
+            <a
+              href="https://keys.openpgp.org/vks/v1/by-email/info@stenstromen.se"
+              rel="noreferrer"
+              target="_blank"
+              className="FooterLink"
+              aria-label="PGP"
+            >
+              <FaUserSecret size={22}/>
             </a>
           </div>
         </div>
