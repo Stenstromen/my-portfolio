@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, lazy, Suspense} from "react";
 import { motion } from "framer-motion";
-import ProjectCard from "../Components/ProjectCard";
 import ProjectList from "./ProjectList";
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
+  const ProjectCard = lazy(() => import('../Components/ProjectCard'));
 
   useEffect(() => {
     setIsHydrated(true);
@@ -28,6 +28,7 @@ function Projects() {
           ({ image, title, description, link, github, badges }) => {
             return (
               <>
+              <Suspense key={title} fallback={<div>Loading...</div>}>
                 <ProjectCard
                   key={title}
                   image={image}
@@ -37,6 +38,7 @@ function Projects() {
                   github={github}
                   badges={badges}
                 />
+                </Suspense>
               </>
             );
           }
