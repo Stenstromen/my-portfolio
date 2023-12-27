@@ -1,5 +1,8 @@
 import FlareIP from "../img/flareip.svg";
 import registryport from "../img/registryport.png";
+import miniomatic from "../img/miniomatic.svg";
+import khaossweeper from "../img/khaossweeper.png"
+import grumpypgp from "../img/grumpypgp.png";
 import BadgesList from "../Components/BadgesList";
 
 const ProjectList = [
@@ -53,7 +56,7 @@ const ProjectList = [
     title: "DockerCTX",
     description:
       "Rewrite of ahmetb's 'kubectx' utility. Easily switch between Docker contexts.",
-      link: "https://github.com/Stenstromen/dockerctx/releases/latest/",
+    link: "https://github.com/Stenstromen/dockerctx/releases/latest/",
     github: "https://github.com/Stenstromen/dockerctx",
     badges: [BadgesList.SHELL],
   },
@@ -85,9 +88,19 @@ const ProjectList = [
     badges: [BadgesList.NODEJS, BadgesList.KUBERNETES],
   },
   {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/spouting-whale_1f433.png",
+    image: grumpypgp,
+    title: "GrumpyPGP",
+    description: "The lack of a good PGP app for iOS makes the cat grumpy.",
+    link:"https://apps.apple.com/se/app/grumpypgp/id6474478177",
+    github: "https://github.com/Stenstromen/grumpypgp",
+    badges: [BadgesList.REACTNATIVE, BadgesList.TS],
+  },
+  {
+    image:
+      "https://em-content.zobj.net/thumbs/240/apple/354/spouting-whale_1f433.png",
     title: "NcRegistry",
-    description: "NcRegistry Go binary provides users with an interactive prompt to select registries, view repositories, and manage Docker images and tags.",
+    description:
+      "NcRegistry Go binary provides users with an interactive prompt to select registries, view repositories, and manage Docker images and tags.",
     link: "https://github.com/Stenstromen/ncregistry/releases/latest/",
     github: "https://github.com/Stenstromen/ncregistry",
     badges: [BadgesList.GO, BadgesList.DOCKER],
@@ -109,9 +122,18 @@ const ProjectList = [
     ],
   },
   {
+    image: miniomatic,
+    title: "Miniomatic",
+    description: "Backend service API for Minio that provides a simple way to create and manage Minio instances on Kubernetes.",
+    link: "https://github.com/Stenstromen/miniomatic/releases/latest/",
+    github: "https://github.com/Stenstromen/minomatic",
+    badges: [BadgesList.GO, BadgesList.DOCKER, BadgesList.KUBERNETES],
+  },
+  {
     image: registryport,
     title: "RegistryPort",
-    description: "RegistryPort brings the power of Docker Registries to the palm of your hand.",
+    description:
+      "RegistryPort brings the power of Docker Registries to the palm of your hand.",
     link: "https://apps.apple.com/us/app/registryport/id6464222587",
     github: "https://github.com/Stenstromen/registryport",
     badges: [BadgesList.REACTNATIVE, BadgesList.TS, BadgesList.DOCKER],
@@ -234,6 +256,14 @@ const ProjectList = [
     description: "ifconfig.co copycat, written in Go",
     link: "https://github.com/Stenstromen/gomyip",
     github: "https://github.com/Stenstromen/gomyip",
+    badges: [BadgesList.GO, BadgesList.KUBERNETES],
+  },
+  {
+    image: khaossweeper,
+    title: "KhaosSweeper",
+    description: "Minesweeper game that randomly kills pods in your Kubernetes cluster, when a mine is hit, because why not?",
+    link: "https://github.com/Stenstromen/khaossweeper/releases/latest/",
+    github: "https://github.com/Stenstromen/khaossweeper",
     badges: [BadgesList.GO, BadgesList.KUBERNETES],
   },
   {
