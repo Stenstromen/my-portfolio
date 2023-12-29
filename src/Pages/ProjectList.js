@@ -1,9 +1,31 @@
 import FlareIP from "../img/flareip.svg";
 import registryport from "../img/registryport.png";
 import miniomatic from "../img/miniomatic.svg";
-import khaossweeper from "../img/khaossweeper.png"
+import khaossweeper from "../img/khaossweeper.png";
 import grumpypgp from "../img/grumpypgp.png";
+import vault from "../img/vault.png";
 import BadgesList from "../Components/BadgesList";
+
+const {
+  REACTJS,
+  REACTNATIVE,
+  GO,
+  MARIADB,
+  KUBERNETES,
+  DOCKER,
+  JS,
+  TS,
+  CLOUDFLARE,
+  HTML,
+  CSS,
+  NODEJS,
+  SOCKETIO,
+  SHELL,
+  TENSORFLOW,
+  WORDPRESS,
+  PYTHON,
+  RUST,
+} = BadgesList;
 
 const ProjectList = [
   {
@@ -12,12 +34,7 @@ const ProjectList = [
     description: "List amount/View brand new .SE and .NU Domains.",
     link: "https://axfr.se",
     github: "https://github.com/Stenstromen/axfr-frontend",
-    badges: [
-      BadgesList.REACTJS,
-      BadgesList.GO,
-      BadgesList.MARIADB,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [REACTJS, GO, MARIADB, KUBERNETES],
   },
   {
     image: "https://battlefield2042.se/bf2042ico.png",
@@ -25,7 +42,7 @@ const ProjectList = [
     description: "Battlefield 2042 Stats page",
     link: "https://battlefield2042.se",
     github: "https://github.com/Stenstromen/bf2042stats",
-    badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.CLOUDFLARE],
+    badges: [REACTJS, TS, CLOUDFLARE],
   },
   {
     image:
@@ -34,7 +51,7 @@ const ProjectList = [
     description: "CaveStory game fan page... Simple enough.",
     link: "https://cavestory.se",
     github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [BadgesList.HTML, BadgesList.CSS, BadgesList.CLOUDFLARE],
+    badges: [HTML, CSS, CLOUDFLARE],
   },
   {
     image:
@@ -43,12 +60,7 @@ const ProjectList = [
     description: "Fully featured NyanCat themed chat client and server.",
     link: "https://chat.nyancat.se",
     github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [
-      BadgesList.REACTJS,
-      BadgesList.NODEJS,
-      BadgesList.SOCKETIO,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [REACTJS, NODEJS, SOCKETIO, KUBERNETES],
   },
   {
     image:
@@ -58,7 +70,7 @@ const ProjectList = [
       "Rewrite of ahmetb's 'kubectx' utility. Easily switch between Docker contexts.",
     link: "https://github.com/Stenstromen/dockerctx/releases/latest/",
     github: "https://github.com/Stenstromen/dockerctx",
-    badges: [BadgesList.SHELL],
+    badges: [SHELL],
   },
   {
     image: "https://filosofiskaeleonora.se/pusheen-cat.png",
@@ -67,7 +79,7 @@ const ProjectList = [
       "I took the Red Pill, but now I have to live the Blue Pill life.",
     link: "https://filosofiskaeleonora.se",
     github: "https://github.com/Stenstromen/filosofiskaeleonora",
-    badges: [BadgesList.REACTJS, BadgesList.CLOUDFLARE],
+    badges: [REACTJS, CLOUDFLARE],
   },
   {
     image: FlareIP,
@@ -75,7 +87,7 @@ const ProjectList = [
     description: "Cloudflare Worker to get the client IP address.",
     link: "https://addr.se/readme",
     github: "https://github.com/Stenstromen/flareip",
-    badges: [BadgesList.TS, BadgesList.CLOUDFLARE],
+    badges: [TS, CLOUDFLARE],
   },
   {
     image:
@@ -85,15 +97,15 @@ const ProjectList = [
       "API server for listing beautiful flowers, requires registration.",
     link: "https://flower.api.stenstromen.se/readme",
     github: "https://github.com/Stenstromen/flowerapi",
-    badges: [BadgesList.NODEJS, BadgesList.KUBERNETES],
+    badges: [NODEJS, KUBERNETES],
   },
   {
     image: grumpypgp,
     title: "GrumpyPGP",
     description: "The lack of a good PGP app for iOS makes the cat grumpy.",
-    link:"https://apps.apple.com/se/app/grumpypgp/id6474478177",
+    link: "https://apps.apple.com/se/app/grumpypgp/id6474478177",
     github: "https://github.com/Stenstromen/grumpypgp",
-    badges: [BadgesList.REACTNATIVE, BadgesList.TS],
+    badges: [REACTNATIVE, TS],
   },
   {
     image:
@@ -103,7 +115,7 @@ const ProjectList = [
       "NcRegistry Go binary provides users with an interactive prompt to select registries, view repositories, and manage Docker images and tags.",
     link: "https://github.com/Stenstromen/ncregistry/releases/latest/",
     github: "https://github.com/Stenstromen/ncregistry",
-    badges: [BadgesList.GO, BadgesList.DOCKER],
+    badges: [GO, DOCKER],
   },
   {
     image:
@@ -112,22 +124,16 @@ const ProjectList = [
     description: "Share/Live share current location.",
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
-    badges: [
-      BadgesList.HTML,
-      BadgesList.CSS,
-      BadgesList.JS,
-      BadgesList.NODEJS,
-      BadgesList.SOCKETIO,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
   },
   {
     image: miniomatic,
     title: "Miniomatic",
-    description: "Backend service API for Minio that provides a simple way to create and manage Minio instances on Kubernetes.",
+    description:
+      "Backend service API for Minio that provides a simple way to create and manage Minio instances on Kubernetes.",
     link: "https://github.com/Stenstromen/miniomatic/releases/latest/",
     github: "https://github.com/Stenstromen/minomatic",
-    badges: [BadgesList.GO, BadgesList.DOCKER, BadgesList.KUBERNETES],
+    badges: [GO, DOCKER, KUBERNETES],
   },
   {
     image: registryport,
@@ -136,7 +142,7 @@ const ProjectList = [
       "RegistryPort brings the power of Docker Registries to the palm of your hand.",
     link: "https://apps.apple.com/us/app/registryport/id6464222587",
     github: "https://github.com/Stenstromen/registryport",
-    badges: [BadgesList.REACTNATIVE, BadgesList.TS, BadgesList.DOCKER],
+    badges: [REACTNATIVE, TS, DOCKER],
   },
   {
     image: "https://openvision.boo/assets/logo-2fd1099d.svg",
@@ -145,7 +151,7 @@ const ProjectList = [
       "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3 model in TensorflowJs.",
     link: "https://openvision.boo",
     github: "https://github.com/Stenstromen/openvision",
-    badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.TENSORFLOW],
+    badges: [REACTJS, TS, TENSORFLOW],
   },
   {
     image:
@@ -153,7 +159,7 @@ const ProjectList = [
     title: "Peppoj.net",
     description: "Personal blog with useful guides.",
     link: "https://www.peppoj.net",
-    badges: [BadgesList.WORDPRESS, BadgesList.KUBERNETES],
+    badges: [WORDPRESS, KUBERNETES],
   },
   {
     image:
@@ -162,7 +168,7 @@ const ProjectList = [
     description: "Generate secure passwords.",
     link: "https://pwgen.cz",
     github: "https://github.com/Stenstromen/pwgen",
-    badges: [BadgesList.REACTJS, BadgesList.TS],
+    badges: [REACTJS, TS],
   },
   {
     image:
@@ -171,7 +177,7 @@ const ProjectList = [
     description: "Pusheen the cat!",
     link: "http://pusheen.se",
     github: "https://github.com/Stenstromen/pusheen",
-    badges: [BadgesList.REACTJS, BadgesList.CLOUDFLARE],
+    badges: [REACTJS, CLOUDFLARE],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/fire_1f525.png",
@@ -180,12 +186,7 @@ const ProjectList = [
       "Create temporary, shareable, messages. Only readable once. Read-Then-Burn.",
     link: "http://readthenburn.se",
     github: "https://github.com/Stenstromen/readthenburn-frontend",
-    badges: [
-      BadgesList.REACTJS,
-      BadgesList.GO,
-      BadgesList.MARIADB,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [REACTJS, GO, MARIADB, KUBERNETES],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/memo_1f4dd.png",
@@ -193,13 +194,7 @@ const ProjectList = [
     description: "Open source note taking application.",
     link: "https://snapnote.online",
     github: "https://github.com/Stenstromen/snapnote",
-    badges: [
-      BadgesList.REACTJS,
-      BadgesList.TS,
-      BadgesList.GO,
-      BadgesList.MARIADB,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [REACTJS, TS, GO, MARIADB, KUBERNETES],
   },
   {
     image: "https://twaddle.page/assets/twaddle-c3415e3b.svg",
@@ -207,13 +202,7 @@ const ProjectList = [
     description: "Generate gibberish using the distilGP2 model.",
     link: "https://twaddle.page",
     github: "https://github.com/Stenstromen/twaddle-frontend",
-    badges: [
-      BadgesList.REACTJS,
-      BadgesList.TS,
-      BadgesList.PYTHON,
-      BadgesList.TENSORFLOW,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [REACTJS, TS, PYTHON, TENSORFLOW, KUBERNETES],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -222,7 +211,7 @@ const ProjectList = [
       "Go binary for creating/updating MTA-SBadgesList.TS records on Cloudflare.",
     link: "https://github.com/Stenstromen/gospfflare/releases/latest/",
     github: "https://github.com/Stenstromen/gospfflare",
-    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
+    badges: [GO, CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -231,7 +220,7 @@ const ProjectList = [
       "Go binary for creating/updating MTA-SBadgesList.TS records on Cloudflare, and create the accompanying Nginx configuration.",
     link: "https://github.com/Stenstromen/gomtastsflare/releases/latest/",
     github: "https://github.com/Stenstromen/gomtastsflare",
-    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
+    badges: [GO, CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -240,7 +229,7 @@ const ProjectList = [
       "Go binary for updating TLSA DANE record on cloudflare from x509 Certificate.",
     link: "https://github.com/Stenstromen/gotlsaflare/releases/latest/",
     github: "https://github.com/Stenstromen/gotlsaflare",
-    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
+    badges: [GO, CLOUDFLARE],
   },
   {
     image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
@@ -248,7 +237,7 @@ const ProjectList = [
     description: "Go binary for creating/updating DKIM records on Cloudflare.",
     link: "https://github.com/Stenstromen/godkimflare/releases/latest/",
     github: "https://github.com/Stenstromen/godkimflare",
-    badges: [BadgesList.GO, BadgesList.CLOUDFLARE],
+    badges: [GO, CLOUDFLARE],
   },
   {
     image: "https://em-content.zobj.net/thumbs/240/apple/354/laptop_1f4bb.png",
@@ -256,15 +245,25 @@ const ProjectList = [
     description: "ifconfig.co copycat, written in Go",
     link: "https://github.com/Stenstromen/gomyip",
     github: "https://github.com/Stenstromen/gomyip",
-    badges: [BadgesList.GO, BadgesList.KUBERNETES],
+    badges: [GO, KUBERNETES],
   },
   {
     image: khaossweeper,
     title: "KhaosSweeper",
-    description: "Minesweeper game that randomly kills pods in your Kubernetes cluster, when a mine is hit, because why not?",
+    description:
+      "Minesweeper game that randomly kills pods in your Kubernetes cluster, when a mine is hit, because why not?",
     link: "https://github.com/Stenstromen/khaossweeper/releases/latest/",
     github: "https://github.com/Stenstromen/khaossweeper",
-    badges: [BadgesList.GO, BadgesList.KUBERNETES],
+    badges: [GO, KUBERNETES],
+  },
+  {
+    image: vault,
+    title: "VaultCTX",
+    description:
+      "Context switching for Hashicorp Vault with support for multiple vaults and namespaces",
+    link: "https://github.com/Stenstromen/vaultctx/releases/latest/",
+    github: "https://github.com/Stenstromen/vaultctx",
+    badges: [RUST],
   },
   {
     image:
@@ -274,14 +273,7 @@ const ProjectList = [
       "Secure and encrypted (including filename) file-sharing service.",
     link: "https://warez.lolcat.se",
     github: "https://github.com/Stenstromen/lolwarez",
-    badges: [
-      BadgesList.HTML,
-      BadgesList.CSS,
-      BadgesList.JS,
-      BadgesList.NODEJS,
-      BadgesList.MARIADB,
-      BadgesList.KUBERNETES,
-    ],
+    badges: [HTML, CSS, JS, NODEJS, MARIADB, KUBERNETES],
   },
   {
     image: "https://arfenhou.se/logo.jpg",
@@ -289,7 +281,7 @@ const ProjectList = [
     description: "Arfenhouse fan page.",
     link: "https://arfenhou.se",
     github: "https://github.com/Stenstromen/arfenhouse",
-    badges: [BadgesList.REACTJS, BadgesList.TS, BadgesList.CLOUDFLARE],
+    badges: [REACTJS, TS, CLOUDFLARE],
   },
 ];
 
