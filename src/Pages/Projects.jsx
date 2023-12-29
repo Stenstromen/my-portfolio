@@ -44,7 +44,11 @@ function Projects() {
           }
         )}
         <ScrollToTop showUnder={160}>
-        <TbSquareArrowUpFilled size={45} color="#f686bd"/>
+        <TbSquareArrowUpFilled style={{
+          transitionDuration: "0s",
+          transitionTimingFunction: "revert",
+          transitionDelay: "0s",
+        }} size={45} color="#f686bd"/>
         </ScrollToTop>
       </motion.div>
     </div>
