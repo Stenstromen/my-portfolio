@@ -1,4 +1,5 @@
 import FlareIP from "../img/flareip.svg";
+import arfenhouse from "../img/arfenhouse.webp";
 import axfr from "../img/axfr.webp";
 import bf2042ico from "../img/bf2042ico.webp";
 import cavestory from "../img/cavestory.webp";
@@ -16,7 +17,7 @@ import peppojnet from "../img/peppojnet.webp";
 import pusheense from "../img/pusheense.webp";
 import pwgen from "../img/pwgen.webp";
 import readthenburn from "../img/readthenburn.webp";
-import registryport from "../img/registryport.png";
+import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
 import warez from "../img/warez.webp";
@@ -282,7 +283,7 @@ const ProjectList = [
     badges: [HTML, CSS, JS, NODEJS, MARIADB, KUBERNETES],
   },
   {
-    image: "https://arfenhou.se/logo.jpg",
+    image: arfenhouse,
     title: "Arfenhouse",
     description: "Arfenhouse fan page.",
     link: "https://arfenhou.se",
