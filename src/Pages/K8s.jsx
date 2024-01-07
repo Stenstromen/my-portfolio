@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import Accordion from "react-bootstrap/Accordion";
+import k8s_social from "../img/k8s_social.png";
 
 function K8s() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -26,6 +28,12 @@ function K8s() {
         type: "spring",
       }}
     >
+      <Helmet>
+        <title>K8s | Stenstromen.se</title>
+        <meta property="og:image" content={k8s_social} />
+        <meta property="og:image:width" content="228" />
+        <meta property="og:image:height" content="221" />
+      </Helmet>
       <Accordion defaultActiveKey="0" flush>
         <Accordion.Item eventKey="0">
           <Accordion.Header>
