@@ -1,9 +1,23 @@
+import bf2042ico from "../img/bf2042ico.webp";
+import noclip from "../img/noclip.webp";
+import snapnote from "../img/snapnote.webp";
+import pwgen from "../img/pwgen.webp";
+import peppojnet from "../img/peppojnet.webp";
+import pusheense from "../img/pusheense.webp";
+import nyancatchat from "../img/nyancatchat.webp";
+import ncregistry from "../img/ncregistry.webp";
+import readthenburn from "../img/readthenburn.webp";
+import flowerapi from "../img/flowerapi.webp";
+import cavestory from "../img/cavestory.webp";
+import dockerctx from "../img/dockerctx.webp";
+import gomyip from "../img/gomyip.webp";
+import warez from "../img/warez.webp";
 import FlareIP from "../img/flareip.svg";
 import registryport from "../img/registryport.png";
 import miniomatic from "../img/miniomatic.svg";
-import khaossweeper from "../img/khaossweeper.png";
-import grumpypgp from "../img/grumpypgp.png";
-import vault from "../img/vault.png";
+import khaossweeper from "../img/khaossweeper.webp";
+import grumpypgp from "../img/grumpypgp.webp";
+import vault from "../img/vault.webp";
 import BadgesList from "../Components/BadgesList";
 
 const {
@@ -37,7 +51,7 @@ const ProjectList = [
     badges: [REACTJS, GO, MARIADB, KUBERNETES],
   },
   {
-    image: "https://battlefield2042.se/bf2042ico.png",
+    image: bf2042ico,
     title: "BF2042Stats",
     description: "Battlefield 2042 Stats page",
     link: "https://battlefield2042.se",
@@ -45,8 +59,7 @@ const ProjectList = [
     badges: [REACTJS, TS, CLOUDFLARE],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/alien-monster_1f47e.png",
+    image: cavestory,
     title: "Cavestory.se",
     description: "CaveStory game fan page... Simple enough.",
     link: "https://cavestory.se",
@@ -54,8 +67,7 @@ const ProjectList = [
     badges: [HTML, CSS, CLOUDFLARE],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/grinning-cat-with-smiling-eyes_1f638.png",
+    image: nyancatchat,
     title: "Chat.NyanCat.se",
     description: "Fully featured NyanCat themed chat client and server.",
     link: "https://chat.nyancat.se",
@@ -63,8 +75,7 @@ const ProjectList = [
     badges: [REACTJS, NODEJS, SOCKETIO, KUBERNETES],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/320/apple/354/floppy-disk_1f4be.png",
+    image: dockerctx,
     title: "DockerCTX",
     description:
       "Rewrite of ahmetb's 'kubectx' utility. Easily switch between Docker contexts.",
@@ -90,8 +101,7 @@ const ProjectList = [
     badges: [TS, CLOUDFLARE],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/red-heart_2764-fe0f.png",
+    image: flowerapi,
     title: "Flower.API",
     description:
       "API server for listing beautiful flowers, requires registration.",
@@ -108,8 +118,7 @@ const ProjectList = [
     badges: [REACTNATIVE, TS],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/spouting-whale_1f433.png",
+    image: ncregistry,
     title: "NcRegistry",
     description:
       "NcRegistry Go binary provides users with an interactive prompt to select registries, view repositories, and manage Docker images and tags.",
@@ -118,8 +127,7 @@ const ProjectList = [
     badges: [GO, DOCKER],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/globe-showing-europe-africa_1f30d.png",
+    image: noclip,
     title: "Noclip.se",
     description: "Share/Live share current location.",
     link: "http://www.noclip.se",
@@ -154,16 +162,14 @@ const ProjectList = [
     badges: [REACTJS, TS, TENSORFLOW],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/linked-paperclips_1f587-fe0f.png",
+    image: peppojnet,
     title: "Peppoj.net",
     description: "Personal blog with useful guides.",
     link: "https://www.peppoj.net",
     badges: [WORDPRESS, KUBERNETES],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/locked-with-pen_1f50f.png",
+    image: pwgen,
     title: "PWGen.cz",
     description: "Generate secure passwords.",
     link: "https://pwgen.cz",
@@ -171,8 +177,7 @@ const ProjectList = [
     badges: [REACTJS, TS],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/smiling-cat-with-heart-eyes_1f63b.png",
+    image: pusheense,
     title: "Pusheen.se",
     description: "Pusheen the cat!",
     link: "http://pusheen.se",
@@ -180,7 +185,7 @@ const ProjectList = [
     badges: [REACTJS, CLOUDFLARE],
   },
   {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/fire_1f525.png",
+    image: readthenburn,
     title: "ReadThenBurn.se",
     description:
       "Create temporary, shareable, messages. Only readable once. Read-Then-Burn.",
@@ -189,7 +194,7 @@ const ProjectList = [
     badges: [REACTJS, GO, MARIADB, KUBERNETES],
   },
   {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/memo_1f4dd.png",
+    image: snapnote,
     title: "Snapnote",
     description: "Open source note taking application.",
     link: "https://snapnote.online",
@@ -240,7 +245,7 @@ const ProjectList = [
     badges: [GO, CLOUDFLARE],
   },
   {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/laptop_1f4bb.png",
+    image: gomyip,
     title: "GoMyIP",
     description: "ifconfig.co copycat, written in Go",
     link: "https://github.com/Stenstromen/gomyip",
@@ -266,8 +271,7 @@ const ProjectList = [
     badges: [RUST],
   },
   {
-    image:
-      "https://em-content.zobj.net/thumbs/240/apple/354/black-cat_1f408-200d-2b1b.png",
+    image: warez,
     title: "Warez.LOLCat.se",
     description:
       "Secure and encrypted (including filename) file-sharing service.",
