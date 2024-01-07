@@ -1,49 +1,51 @@
+import FlareIP from "../img/flareip.svg";
+import axfr from "../img/axfr.webp";
 import bf2042ico from "../img/bf2042ico.webp";
-import noclip from "../img/noclip.webp";
-import snapnote from "../img/snapnote.webp";
-import pwgen from "../img/pwgen.webp";
-import peppojnet from "../img/peppojnet.webp";
-import pusheense from "../img/pusheense.webp";
-import nyancatchat from "../img/nyancatchat.webp";
-import ncregistry from "../img/ncregistry.webp";
-import readthenburn from "../img/readthenburn.webp";
-import flowerapi from "../img/flowerapi.webp";
 import cavestory from "../img/cavestory.webp";
 import dockerctx from "../img/dockerctx.webp";
+import flowerapi from "../img/flowerapi.webp";
+import gologo from "../img/gologo.webp";
 import gomyip from "../img/gomyip.webp";
-import warez from "../img/warez.webp";
-import FlareIP from "../img/flareip.svg";
-import registryport from "../img/registryport.png";
-import miniomatic from "../img/miniomatic.svg";
-import khaossweeper from "../img/khaossweeper.webp";
 import grumpypgp from "../img/grumpypgp.webp";
+import khaossweeper from "../img/khaossweeper.webp";
+import miniomatic from "../img/miniomatic.svg";
+import ncregistry from "../img/ncregistry.webp";
+import noclip from "../img/noclip.webp";
+import nyancatchat from "../img/nyancatchat.webp";
+import peppojnet from "../img/peppojnet.webp";
+import pusheense from "../img/pusheense.webp";
+import pwgen from "../img/pwgen.webp";
+import readthenburn from "../img/readthenburn.webp";
+import registryport from "../img/registryport.png";
+import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
+import warez from "../img/warez.webp";
 import BadgesList from "../Components/BadgesList";
 
 const {
+  CLOUDFLARE,
+  CSS,
+  DOCKER,
+  GO,
+  HTML,
+  JS,
+  KUBERNETES,
+  MARIADB,
+  NODEJS,
+  PYTHON,
   REACTJS,
   REACTNATIVE,
-  GO,
-  MARIADB,
-  KUBERNETES,
-  DOCKER,
-  JS,
-  TS,
-  CLOUDFLARE,
-  HTML,
-  CSS,
-  NODEJS,
-  SOCKETIO,
-  SHELL,
-  TENSORFLOW,
-  WORDPRESS,
-  PYTHON,
   RUST,
+  SHELL,
+  SOCKETIO,
+  TENSORFLOW,
+  TS,
+  WORDPRESS,
 } = BadgesList;
 
 const ProjectList = [
   {
-    image: "https://em-content.zobj.net/thumbs/240/apple/354/memo_1f4dd.png",
+    image: axfr,
     title: "AXFR.se",
     description: "List amount/View brand new .SE and .NU Domains.",
     link: "https://axfr.se",
@@ -210,7 +212,7 @@ const ProjectList = [
     badges: [REACTJS, TS, PYTHON, TENSORFLOW, KUBERNETES],
   },
   {
-    image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    image: gologo,
     title: "GoSPFFlare",
     description:
       "Go binary for creating/updating MTA-SBadgesList.TS records on Cloudflare.",
@@ -219,7 +221,7 @@ const ProjectList = [
     badges: [GO, CLOUDFLARE],
   },
   {
-    image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    image: gologo,
     title: "GoMTA-STSFlare",
     description:
       "Go binary for creating/updating MTA-SBadgesList.TS records on Cloudflare, and create the accompanying Nginx configuration.",
@@ -228,7 +230,7 @@ const ProjectList = [
     badges: [GO, CLOUDFLARE],
   },
   {
-    image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    image: gologo,
     title: "GoTLSAFlare",
     description:
       "Go binary for updating TLSA DANE record on cloudflare from x509 Certificate.",
@@ -237,7 +239,7 @@ const ProjectList = [
     badges: [GO, CLOUDFLARE],
   },
   {
-    image: "https://go.dev/blog/go-brand/Go-Logo/SVG/Go-Logo_Blue.svg",
+    image: gologo,
     title: "GoDKIMFlare",
     description: "Go binary for creating/updating DKIM records on Cloudflare.",
     link: "https://github.com/Stenstromen/godkimflare/releases/latest/",
