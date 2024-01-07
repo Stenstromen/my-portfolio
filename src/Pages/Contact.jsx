@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import LinkedInImg from "../img/li.png";
+import contact_social from "../img/contact_social.png";
 
 function Contact() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -23,6 +25,12 @@ function Contact() {
         type: "spring",
       }}
     >
+      <Helmet>
+        <title>Contact | Stenstromen.se</title>
+        <meta property="og:image" content={contact_social} />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+      </Helmet>
       <div className="ContactHeader">
         <h1> - Connect with me?!</h1>
       </div>

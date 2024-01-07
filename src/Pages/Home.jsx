@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import homepage_social from "../img/homepage_social.png";
+import { Helmet } from "react-helmet";
 import Badges from "../Components/Badges";
 
 function Home() {
@@ -14,6 +16,12 @@ function Home() {
         overflowX: "hidden",
       }}
     >
+      <Helmet>
+        <title>Home | Stenstromen.se</title>
+        <meta property="og:image" content={homepage_social} />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+      </Helmet>
       <motion.div
         initial={{ y: "+400px", opacity: 0 }}
         animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}

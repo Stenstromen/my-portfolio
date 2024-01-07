@@ -1,8 +1,10 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
 import ScrollToTop from "react-scroll-up";
 import { TbSquareArrowUpFilled } from "react-icons/tb";
+import projects_social from "../img/projects_social.png";
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -14,6 +16,12 @@ function Projects() {
 
   return (
     <div className="Projects">
+      <Helmet>
+        <title>Projects | Stenstromen.se</title>
+        <meta property="og:image" content={projects_social} />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+      </Helmet>
       <motion.div
         initial={{ y: "+1000px", opacity: 0 }}
         animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
