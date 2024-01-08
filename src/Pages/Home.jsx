@@ -53,7 +53,7 @@ function Home() {
           </div>
         </div>
       </motion.div>
-      <a href="/k8s"></a>
+      <a href="/k8s" aria-label="Kubernetes presentation"></a>
     </div>
   );
 }
