@@ -7,7 +7,7 @@ function Badges() {
   return (
     <>
       {BadgesArray.map((badge, index) => {
-        return <Badge className="Badge" key={index} alt={badge[0]} src={badge[1].src} />;
+        return <Badge width={badge[1].width} height={badge[1].height} className="Badge" key={index} alt={badge[0]} src={badge[1].src} />;
       })}
     </>
   );
