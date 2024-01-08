@@ -26,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "partytown": "partytown copylib public/~partytown",
-    "build": "partytown copylib public/~partytown && react-scripts build",
+    "build": "partytown copylib public/~partytown && GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postbuild": "react-snap && purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
