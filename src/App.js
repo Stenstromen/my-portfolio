@@ -8,6 +8,7 @@ import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import K8s from "./Pages/K8s";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   const NavBar = lazy(() => import("./Pages/NavBar"));
@@ -25,6 +26,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/k8s" element={<K8s />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Suspense fallback={<div>Loading...</div>}>
