@@ -1,15 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Stack from "react-bootstrap/Stack";
 import FourOFour from "../img/404.webp";
+import { Helmet } from "react-helmet";
 import Badge from "../Components/Badge";
 
 function NotFound() {
-    const [isHydrated, setIsHydrated] = useState(false);
+  const [isHydrated, setIsHydrated] = useState(false);
 
-    useEffect(() => {
-      setIsHydrated(true);
-    }, []);
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
   return (
     <motion.div
       style={{
@@ -27,14 +28,23 @@ function NotFound() {
         type: "spring",
       }}
     >
+      <Helmet>
+        <title>404 | Stenstromen.se</title>
+      </Helmet>
       <Stack gap={2} className="col-md-5 mx-auto">
-        <h1 style={{
+        <h1
+          style={{
             textAlign: "center",
             color: "white",
-        }}>404 - Page not found</h1>
-        <p style={{
+          }}
+        >
+          404 - Page not found
+        </h1>
+        <p
+          style={{
             color: "white",
-        }}>
+          }}
+        >
           The page you are looking for does not exist. Please check your URL and
           try again.
         </p>
