@@ -3,6 +3,7 @@ import arfenhouse from "../img/arfenhouse.webp";
 import axfr from "../img/axfr.webp";
 import bf2042ico from "../img/bf2042ico.webp";
 import cavestory from "../img/cavestory.webp";
+import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
 import flowerapi from "../img/flowerapi.webp";
 import gologo from "../img/gologo.webp";
@@ -289,6 +290,14 @@ const ProjectList = [
     link: "https://arfenhou.se",
     github: "https://github.com/Stenstromen/arfenhouse",
     badges: [REACTJS, TS, CLOUDFLARE],
+  },
+  {
+    image: detblevingencd,
+    title: "det-blev-ingen-cd.se",
+    description: "det-blev-ingen-cd.com, med .se istället.",
+    link: "https://det-blev-ingen-cd.se",
+    github: "https://github.com/stenstromen/det-blev-ingen-cd",
+    badges: [HTML, CSS, JS, CLOUDFLARE],
   },
 ];
 
