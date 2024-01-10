@@ -2,7 +2,6 @@
 import React, { lazy, Suspense } from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Head from "./Components/Head";
 import { Routes, Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
 import Projects from "./Pages/Projects";
@@ -16,7 +15,6 @@ function App() {
 
   return (
     <div className="AppContainer">
-      <Head />
       <Router basename={process.env.PUBLIC_URL}>
         <Suspense fallback={<div>Loading...</div>}>
           <NavBar />
@@ -33,7 +31,6 @@ function App() {
           <Footer />
         </Suspense>
       </Router>
-      <Head />
     </div>
   );
 }

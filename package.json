@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@builder.io/partytown": "^0.8.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -25,8 +24,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "partytown": "partytown copylib public/~partytown",
-    "build": "partytown copylib public/~partytown && GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postbuild": "react-snap && purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
