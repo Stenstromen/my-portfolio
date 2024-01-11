@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
 import ProjectCard from "../Components/ProjectCard";
@@ -9,6 +10,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import projects_social from "../img/projects_social.png";
 
 function Projects() {
+  const [isHydrated, setIsHydrated] = useState(false);
   const [projects, setProjects] = useState([]);
   const [itemsToLoad, setItemsToLoad] = useState(3);
   const hasMoreProjects = projects.length < ProjectList.length;
@@ -21,6 +23,7 @@ function Projects() {
   };
 
   useEffect(() => {
+    setIsHydrated(true);
     const updateItemsToLoad = () => {
       const isMobile = window.outerWidth <= 768;
       setItemsToLoad(isMobile ? 1 : 3);
@@ -48,7 +51,15 @@ function Projects() {
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
       </Helmet>
-      <div>
+      <motion.div
+        initial={{ y: "+1000px", opacity: 0 }}
+        animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
+        transition={{
+          duration: 1.5,
+          ease: "easeIn",
+          type: "spring",
+        }}
+      >
         <InfiniteScroll
           dataLength={projects.length}
           next={loadMoreProjects}
@@ -86,7 +97,7 @@ function Projects() {
             color="#f686bd"
           />
         </ScrollToTop>
-      </div>
+      </motion.div>
     </div>
   );
 }
