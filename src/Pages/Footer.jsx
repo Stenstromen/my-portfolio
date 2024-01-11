@@ -2,6 +2,7 @@ import React from "react";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaUserSecret } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -36,15 +37,9 @@ function Footer() {
             >
               <MdEmail size={25} />
             </a>
-            <a
-              href="https://keys.openpgp.org/vks/v1/by-email/info@stenstromen.se"
-              rel="noreferrer"
-              target="_blank"
-              className="FooterLink"
-              aria-label="PGP"
-            >
-              <FaUserSecret size={22}/>
-            </a>
+            <Link to="/pgp" className="FooterLink">
+              <FaUserSecret size={22} />
+            </Link>
           </div>
         </div>
       </footer>
