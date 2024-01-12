@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
 import ProjectCard from "../Components/ProjectCard";
 import EndMessage from "../Components/EndMessage";
+import LoadMore from "../Components/LoadMore";
 import ScrollToTop from "react-scroll-up";
 import { TbSquareArrowUpFilled } from "react-icons/tb";
 import InfiniteScroll from "react-infinite-scroll-component";
@@ -86,6 +87,8 @@ function Projects() {
             }
           )}
         </InfiniteScroll>
+
+        {hasMoreProjects && <LoadMore loadMoreProjects={loadMoreProjects} />}
         <ScrollToTop showUnder={160}>
           <TbSquareArrowUpFilled
             style={{
