@@ -37,7 +37,7 @@ function Footer() {
             >
               <MdEmail size={25} />
             </a>
-            <Link to="/pgp" className="FooterLink">
+            <Link to="/pgp" className="FooterLink" aria-label="PGP Public key">
               <FaUserSecret size={22} />
             </Link>
           </div>
