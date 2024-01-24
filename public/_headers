@@ -2,3 +2,4 @@
   Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; img-src 'self' https://img.shields.io https://filosofiskaeleonora.se https://openvision.boo https://twaddle.page data:; style-src 'self'; object-src 'none'; upgrade-insecure-requests; form-action 'self'; frame-ancestors 'none'; base-uri 'self';
   X-Frame-Options: DENY
   X-XSS-Protection: 0
+  Referrer-Policy: no-referrer
