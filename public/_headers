@@ -1,4 +1,4 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com https://keys.openpgp.org; img-src 'self' https://img.shields.io https://filosofiskaeleonora.se https://openvision.boo https://twaddle.page data:; block-all-mixed-content; upgrade-insecure-requests; form-action 'self';
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; img-src 'self' https://img.shields.io https://filosofiskaeleonora.se https://openvision.boo https://twaddle.page data:; block-all-mixed-content; upgrade-insecure-requests; form-action 'self';
   X-Frame-Options: DENY
   X-XSS-Protection: 0
