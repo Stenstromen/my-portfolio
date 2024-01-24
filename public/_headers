@@ -1,2 +1,4 @@
 /*
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com;
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; block-all-mixed-content; upgrade-insecure-requests; form-action 'self';
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
