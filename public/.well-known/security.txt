@@ -1,0 +1,5 @@
+Contact: mailto:info@stenstromen.se
+Expires: 2024-03-23T23:00:00.000Z
+Encryption: https://stenstromen.se/pgp
+Preferred-Languages: en, sv
+Canonical: https://stenstromen.se/.well-known/security.txt
