@@ -27,6 +27,7 @@ function NotFound() {
         ease: "easeIn",
         type: "spring",
       }}
+      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>404 | Stenstromen.se</title>
@@ -37,6 +38,7 @@ function NotFound() {
             textAlign: "center",
             color: "white",
           }}
+          nonce="xVAsYVe6p2NlPv6L"
         >
           404 - Page not found
         </h1>
@@ -44,6 +46,7 @@ function NotFound() {
           style={{
             color: "white",
           }}
+          nonce="xVAsYVe6p2NlPv6L"
         >
           The page you are looking for does not exist. Please check your URL and
           try again.

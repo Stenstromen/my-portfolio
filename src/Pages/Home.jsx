@@ -15,6 +15,7 @@ function Home() {
       style={{
         overflowX: "hidden",
       }}
+      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>Home | Stenstromen.se</title>
@@ -30,6 +31,7 @@ function Home() {
           ease: "easeIn",
           type: "spring",
         }}
+        nonce="xVAsYVe6p2NlPv6L"
       >
         <h1 className="HomeH1">Hello!</h1>
         <h2 className="HomeH2">
@@ -46,6 +48,7 @@ function Home() {
           ease: "easeIn",
           type: "spring",
         }}
+        nonce="xVAsYVe6p2NlPv6L"
       >
         <div className="BadgesContainer">
           <div className="Badges">

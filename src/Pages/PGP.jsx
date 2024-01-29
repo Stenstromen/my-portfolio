@@ -45,6 +45,7 @@ function PGP() {
         ease: "easeIn",
         type: "spring",
       }}
+      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>PGP | Stenstromen.se</title>
@@ -56,6 +57,7 @@ function PGP() {
         style={{
           maxWidth: "600px",
         }}
+        nonce="xVAsYVe6p2NlPv6L"
       >
         <Card.Body>
           <Card.Title>info@stenstromen.se PGP Public Key</Card.Title>
@@ -69,6 +71,7 @@ function PGP() {
               color: "#000000",
             }}
             onClick={handleClick}
+            nonce="xVAsYVe6p2NlPv6L"
           >
             Copy to clipboard
           </Button>

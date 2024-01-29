@@ -60,6 +60,7 @@ function Projects() {
           ease: "easeIn",
           type: "spring",
         }}
+        nonce="xVAsYVe6p2NlPv6L"
       >
         <InfiniteScroll
           dataLength={projects.length}
@@ -98,6 +99,7 @@ function Projects() {
             }}
             size={45}
             color="#f686bd"
+            nonce="xVAsYVe6p2NlPv6L"
           />
         </ScrollToTop>
       </motion.div>

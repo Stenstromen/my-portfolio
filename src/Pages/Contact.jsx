@@ -24,6 +24,7 @@ function Contact() {
         ease: "easeIn",
         type: "spring",
       }}
+      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>Contact | Stenstromen.se</title>

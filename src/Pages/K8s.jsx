@@ -27,6 +27,7 @@ function K8s() {
         ease: "easeIn",
         type: "spring",
       }}
+      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>K8s | Stenstromen.se</title>
