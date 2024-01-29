@@ -1,0 +1,6 @@
+name = "cspinjector"
+compatibility_date = "2023-08-07"
+main = "worker.js"
+routes = [
+    "https://stenstromen.se/*",
+]
