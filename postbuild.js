@@ -4,7 +4,7 @@ const path = require('path');
 
 const buildDir = path.join(__dirname, 'build');
 
-const folders = ['Projects', 'Contact', 'pgp', 'k8s'];
+const folders = ['Projects', 'Contact', 'pgp', 'k8s', 'det-blev-ingen-cd'];
 
 folders.forEach(folder => {
   const folderPath = path.join(buildDir, folder);

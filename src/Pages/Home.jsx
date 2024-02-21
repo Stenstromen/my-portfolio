@@ -57,6 +57,7 @@ function Home() {
         </div>
       </motion.div>
       <a href="/k8s" aria-label="Kubernetes presentation"></a>
+      <a href="/det-blev-ingen-cd" aria-label="Det blev ingen CD"></a>
     </div>
   );
 }

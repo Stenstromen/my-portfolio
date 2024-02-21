@@ -8,6 +8,7 @@ import Projects from "./Pages/Projects";
 import Home from "./Pages/Home";
 import Contact from "./Pages/Contact";
 import K8s from "./Pages/K8s";
+import DetBlevIngenCD from "./Pages/DetBlevIngenCD";
 import PGP from "./Pages/PGP";
 import NotFound from "./Pages/NotFound";
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/Contact" element={<Contact />} />
             <Route path="/k8s" element={<K8s />} />
+            <Route path="/det-blev-ingen-cd" element={<DetBlevIngenCD />} />
             <Route path="/pgp" element={<PGP />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
