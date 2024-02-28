@@ -22,6 +22,7 @@ import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
 import warez from "../img/warez.webp";
+import linkvigil from "../img/linkvigil.webp";
 import BadgesList from "../Components/BadgesList";
 
 const {
@@ -137,6 +138,15 @@ const ProjectList = [
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
     badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
+  },
+  {
+    image: linkvigil,
+    title: "LinkVigil",
+    description:
+      "LinkVigil is a simple HTTP API monitoring tool, that checks if a URL is up or down and updates Atlassian Statuspage.",
+    link: "https://github.com/Stenstromen/linkvigil/releases/latest/",
+    github: "https://github.com/Stenstromen/linkvigil",
+    badges: [GO],
   },
   {
     image: miniomatic,
