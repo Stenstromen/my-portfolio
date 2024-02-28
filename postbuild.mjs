@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
 
-const buildDir = path.join(__dirname, 'build');
+const buildDir = path.join(process.cwd(), 'build');
 
 const folders = ['Projects', 'Contact', 'pgp', 'k8s', 'det-blev-ingen-cd'];
 
@@ -13,7 +13,7 @@ folders.forEach(folder => {
 
   fs.renameSync(indexPath, newFilePath);
 
-  fs.rmdirSync(folderPath, { recursive: true });
+  fs.rmSync(folderPath, { recursive: true });
 });
 
 console.log('Post-build processing completed.');
