@@ -16,6 +16,14 @@ function NavBar() {
             <LinkContainer to="/Projects">
               <Nav.Link className="nav-link">Projects</Nav.Link>
             </LinkContainer>
+            <Nav.Link
+              href="https://stenstromen.statuspage.io/"
+              className="nav-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Uptime
+            </Nav.Link>
             <LinkContainer to="/Contact">
               <Nav.Link className="nav-link">Contact</Nav.Link>
             </LinkContainer>
