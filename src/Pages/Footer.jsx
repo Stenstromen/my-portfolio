@@ -1,6 +1,6 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin, FaUserSecret } from "react-icons/fa";
+import { FaLinkedin, FaUserSecret, FaTrafficLight } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
@@ -40,6 +40,14 @@ function Footer() {
             <Link to="/pgp" className="FooterLink" aria-label="PGP Public key">
               <FaUserSecret size={22} />
             </Link>
+            <a href="https://stenstromen.statuspage.io/"
+              rel="noreferrer"
+              target="_blank"
+              className="FooterLink"
+              aria-label="Status page"
+            >
+              <FaTrafficLight size={22}/>
+            </a>
           </div>
         </div>
       </footer>
