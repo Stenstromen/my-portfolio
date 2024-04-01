@@ -59,6 +59,12 @@ const BadgesList = {
     height: "43px",
     src: "https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB",
   },
+  VITE: {
+    name: "VITE",
+    width: "105px",
+    height: "43px",
+    src: "https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white",
+  },
   NGINX: {
     name: "NGINX",
     width: "118.25px",

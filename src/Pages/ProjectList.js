@@ -1,7 +1,9 @@
 import FlareIP from "../img/flareip.svg";
+import FlareGHStats from "../img/flareghstats.webp";
 import arfenhouse from "../img/arfenhouse.webp";
 import axfr from "../img/axfr.webp";
 import bf2042ico from "../img/bf2042ico.webp";
+import bright from "../img/bright.webp";
 import cavestory from "../img/cavestory.webp";
 import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
@@ -64,6 +66,15 @@ const ProjectList = [
     badges: [REACTJS, TS, CLOUDFLARE],
   },
   {
+    image: bright,
+    title: "Bright",
+    description:
+      "BRIGHT is a DNS, Email and Web standards testing tool. All related to a single tested domain.",
+    link: "https://github.com/Stenstromen/bright/releases/latest",
+    github: "https://github.com/Stenstromen/bright",
+    badges: [RUST],
+  },
+  {
     image: cavestory,
     title: "Cavestory.se",
     description: "CaveStory game fan page... Simple enough.",
@@ -100,9 +111,18 @@ const ProjectList = [
   {
     image: FlareIP,
     title: "FlareIP",
-    description: "Cloudflare Worker to get the client IP address.",
+    description:
+      "Cloudflare Worker to get the client IP address and other stats.",
     link: "https://addr.se/readme",
     github: "https://github.com/Stenstromen/flareip",
+    badges: [TS, CLOUDFLARE],
+  },
+  {
+    image: FlareGHStats,
+    title: "FlareGHStats",
+    description: "Cloudflare Worker to get the GitHub stats for a user.",
+    link: "https://github.com/Stenstromen/flareghstats",
+    github: "https://github.com/Stenstromen/flareghstats",
     badges: [TS, CLOUDFLARE],
   },
   {

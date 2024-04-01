@@ -3,9 +3,15 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaUserSecret, FaTrafficLight } from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
 import { Link } from "react-router-dom";
-import {OverlayTrigger, Tooltip} from "react-bootstrap";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 function Footer() {
+  const tooltipStyle = {
+    color: "white",
+    padding: "10px",
+    borderRadius: "25px",
+    backgroundColor: "black",
+  };
   return (
     <div>
       <footer className="Footer">
@@ -14,7 +20,7 @@ function Footer() {
             <OverlayTrigger
               placement="top"
               overlay={
-                <Tooltip>
+                <Tooltip style={tooltipStyle}>
                   <strong>Add Me On LinkedIn!</strong>
                 </Tooltip>
               }
@@ -32,7 +38,7 @@ function Footer() {
             <OverlayTrigger
               placement="top"
               overlay={
-                <Tooltip>
+                <Tooltip style={tooltipStyle}>
                   <strong>Follow Me On GitHub!</strong>
                 </Tooltip>
               }
@@ -51,7 +57,7 @@ function Footer() {
             <OverlayTrigger
               placement="top"
               overlay={
-                <Tooltip>
+                <Tooltip style={tooltipStyle}>
                   <strong>Send Me An Email!</strong>
                 </Tooltip>
               }
@@ -69,7 +75,7 @@ function Footer() {
             <OverlayTrigger
               placement="top"
               overlay={
-                <Tooltip>
+                <Tooltip style={tooltipStyle}>
                   <strong>Fetch My Public PGP Key!</strong>
                 </Tooltip>
               }
@@ -85,7 +91,7 @@ function Footer() {
             <OverlayTrigger
               placement="top"
               overlay={
-                <Tooltip>
+                <Tooltip style={tooltipStyle}>
                   <strong>Atlassian Statuspage Uptime</strong>
                 </Tooltip>
               }
