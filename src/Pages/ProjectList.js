@@ -7,6 +7,7 @@ import bright from "../img/bright.webp";
 import cavestory from "../img/cavestory.webp";
 import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
+import doggate from "../img/doggate.webp";
 import flowerapi from "../img/flowerapi.webp";
 import gologo from "../img/gologo.webp";
 import gomyip from "../img/gomyip.webp";
@@ -24,6 +25,7 @@ import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
 import linkvigil from "../img/linkvigil.webp";
+import lynxgate from "../img/lynxgate.webp";
 import BadgesList from "../Components/BadgesList";
 
 const {
@@ -98,6 +100,15 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/dockerctx",
     badges: [SHELL],
   },
+{
+    image: doggate,
+    title: "DogGate",
+    description:
+      "DogGate, a simple and easy authentication system for your web applications.",
+    link: "https://github.com/Stenstromen/doggate",
+    github: "https://github.com/Stenstromen/doggate",
+    badges: [GO, DOCKER, KUBERNETES],
+},
   {
     image: "https://filosofiskaeleonora.se/pusheen-cat.png",
     title: "Filosofiska Eleonora",
@@ -166,6 +177,14 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/linkvigil/releases/latest/",
     github: "https://github.com/Stenstromen/linkvigil",
     badges: [GO],
+  },
+  {
+    image: lynxgate,
+    title: "LynxGate",
+    description: "API Authentication GW for use with Nginx Ingress .",
+    link: "https://github.com/Stenstromen/lynxgate/pkgs/container/lynxgate",
+    github: "https://github.com/Stenstromen/lynxgate",
+    badges: [GO, DOCKER, KUBERNETES],
   },
   {
     image: miniomatic,
