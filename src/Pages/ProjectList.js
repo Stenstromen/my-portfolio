@@ -23,7 +23,6 @@ import readthenburn from "../img/readthenburn.webp";
 import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
-import warez from "../img/warez.webp";
 import linkvigil from "../img/linkvigil.webp";
 import BadgesList from "../Components/BadgesList";
 
@@ -303,15 +302,6 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/vaultctx/releases/latest/",
     github: "https://github.com/Stenstromen/vaultctx",
     badges: [RUST],
-  },
-  {
-    image: warez,
-    title: "Warez.LOLCat.se",
-    description:
-      "Secure and encrypted (including filename) file-sharing service.",
-    link: "https://warez.lolcat.se",
-    github: "https://github.com/Stenstromen/lolwarez",
-    badges: [HTML, CSS, JS, NODEJS, MARIADB, KUBERNETES],
   },
   {
     image: arfenhouse,
