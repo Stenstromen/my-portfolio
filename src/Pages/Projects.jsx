@@ -5,7 +5,6 @@ import ProjectList from "./ProjectList";
 import ProjectCard from "../Components/ProjectCard";
 import EndMessage from "../Components/EndMessage";
 import LoadMore from "../Components/LoadMore";
-import ScrollToTop from "react-scroll-up";
 import { TbSquareArrowUpFilled } from "react-icons/tb";
 import InfiniteScroll from "react-infinite-scroll-component";
 import projects_social from "../img/projects_social.png";
@@ -15,12 +14,28 @@ function Projects() {
   const [projects, setProjects] = useState([]);
   const [itemsToLoad, setItemsToLoad] = useState(3);
   const hasMoreProjects = projects.length < ProjectList.length;
+  const [isVisible, setIsVisible] = useState(false);
 
   const loadMoreProjects = () => {
     setProjects((projects) => [
       ...projects,
       ...ProjectList.slice(projects.length, projects.length + itemsToLoad),
     ]);
+  };
+
+  const toggleVisibility = () => {
+    if (window.scrollY > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   useEffect(() => {
@@ -43,6 +58,11 @@ function Projects() {
   useEffect(() => {
     loadMoreProjects();
   }, [itemsToLoad]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
 
   return (
     <div>
@@ -90,18 +110,22 @@ function Projects() {
         </InfiniteScroll>
 
         {hasMoreProjects && <LoadMore loadMoreProjects={loadMoreProjects} />}
-        <ScrollToTop showUnder={160}>
-          <TbSquareArrowUpFilled
-            style={{
-              transitionDuration: "0s",
-              transitionTimingFunction: "revert",
-              transitionDelay: "0s",
-            }}
-            size={45}
-            color="#f686bd"
-            nonce="xVAsYVe6p2NlPv6L"
-          />
-        </ScrollToTop>
+        {isVisible && (
+          <a
+            onClick={scrollToTop}
+            style={{ position: "fixed", right: "15px", bottom: "15px" }}
+          >
+            <TbSquareArrowUpFilled
+              style={{
+                transitionDuration: "0s",
+                transitionTimingFunction: "revert",
+                transitionDelay: "0s",
+              }}
+              size={55}
+              color="#f686bd"
+            />
+          </a>
+        )}
       </motion.div>
     </div>
   );
