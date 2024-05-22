@@ -7,7 +7,7 @@ import { LinkContainer } from "react-router-bootstrap";
 function NavBar() {
   return (
     <div className="Navbar">
-      <Navbar bg="#22223b" className="Nav-font" fixed="top">
+      <Navbar className="Nav-font" fixed="top">
         <Container className="justify-content-center">
           <Nav className="Nav-filler">
             <LinkContainer to="/">
