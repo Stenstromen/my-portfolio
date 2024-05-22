@@ -20,6 +20,11 @@ html {
   pointer-events: none;
 }
 
+.Navbar {
+  margin-bottom: 4.3rem;
+  background-color: #4f5d75;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -43,6 +48,9 @@ html {
 
 .Nav-font {
   font-size: 25px;
+  background-color: #4f5d75;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .Nav-filler {
