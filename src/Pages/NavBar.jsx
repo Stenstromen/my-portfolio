@@ -1,13 +1,13 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+//import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
 
 function NavBar() {
   return (
     <div className="Navbar">
-      <Navbar className="Nav-font" fixed="top">
+      <nav className="Nav-font navbar navbar-expand navbar-light fixed-top">
         <Container className="justify-content-center">
           <Nav className="Nav-filler">
             <LinkContainer to="/">
@@ -21,7 +21,7 @@ function NavBar() {
             </LinkContainer>
           </Nav>
         </Container>
-      </Navbar>
+      </nav>
     </div>
   );
 }
