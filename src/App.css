@@ -22,7 +22,6 @@ html {
 
 .Navbar {
   margin-bottom: 4.3rem;
-  background-color: #4f5d75;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,7 +47,7 @@ html {
 
 .Nav-font {
   font-size: 25px;
-  background-color: #4f5d75;
+  background-color: rgba(79, 93, 117, 0.8);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
 }
