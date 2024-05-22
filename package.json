@@ -7,7 +7,7 @@
     "start": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "postbuild": "node postbuild.mjs"
+    "postbuild": "purgecss --config purgecss.config.cjs"
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
