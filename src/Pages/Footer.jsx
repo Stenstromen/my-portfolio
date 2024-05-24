@@ -1,6 +1,11 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin, FaUserSecret, FaTrafficLight } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaMastodon,
+  FaUserSecret,
+  FaTrafficLight,
+} from "react-icons/fa";
 import { TfiGithub } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
@@ -33,6 +38,24 @@ function Footer() {
                 aria-label="LinkedIn"
               >
                 <FaLinkedin size={25} />
+              </a>
+            </OverlayTrigger>
+            <OverlayTrigger
+              placement="top"
+              overlay={
+                <Tooltip style={tooltipStyle}>
+                  <strong>Follow me on Mastodon!</strong>
+                </Tooltip>
+              }
+            >
+              <a
+                href="https://k8s.social/@stenstromen"
+                rel="noreferrer"
+                target="_blank"
+                className="FooterLink"
+                aria-label="Mastodon"
+              >
+                <FaMastodon size={25} />
               </a>
             </OverlayTrigger>
             <OverlayTrigger
