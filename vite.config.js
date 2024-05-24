@@ -4,6 +4,7 @@ import react from "@vitejs/plugin-react";
 import { htmlPrerender } from "vite-plugin-html-prerender";
 import routes from "./routes.js";
 import path from "path";
+import { minify } from "html-minifier-terser";
 
 export default defineConfig(() => {
   return {
@@ -16,7 +17,7 @@ export default defineConfig(() => {
         staticDir: path.resolve(__dirname, "build"),
         fallbackDir: path.resolve(__dirname, "build"),
         routes: ["/"].concat(routes.map((route) => `/${route}`)),
-        minify: {
+        minify: (html) => minify(html, {
           collapseBooleanAttributes: true,
           collapseWhitespace: true,
           decodeEntities: true,
@@ -35,7 +36,7 @@ export default defineConfig(() => {
           minifyCSS: true,
           minifyJS: true,
           minifyURLs: true,
-        },
+        }),
       }),
     ],
   };
