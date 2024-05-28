@@ -16,6 +16,7 @@ import khaossweeper from "../img/khaossweeper.webp";
 import miniomatic from "../img/miniomatic.svg";
 import ncregistry from "../img/ncregistry.webp";
 import noclip from "../img/noclip.webp";
+import non from "../img/non.webp";
 import nyancatchat from "../img/nyancatchat.webp";
 import peppojnet from "../img/peppojnet.webp";
 import pusheense from "../img/pusheense.webp";
@@ -168,6 +169,14 @@ const ProjectList = [
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
     badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
+  },
+  {
+    image: non,
+    title: "No\\n",
+    description: "Simple line break and carriage return remover",
+    link: "https://github.com/Stenstromen/non/releases/latest/",
+    github: "https://github.com/Stenstromen/non",
+    badges: [RUST],
   },
   {
     image: linkvigil,

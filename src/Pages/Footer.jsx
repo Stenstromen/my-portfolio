@@ -50,7 +50,7 @@ function Footer() {
             >
               <a
                 href="https://k8s.social/@stenstromen"
-                rel="noreferrer"
+                rel="me noreferrer"
                 target="_blank"
                 className="FooterLink"
                 aria-label="Mastodon"
