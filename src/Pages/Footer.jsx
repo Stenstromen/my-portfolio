@@ -37,7 +37,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin size={25} />
+                <FaLinkedin size={35} />
               </a>
             </OverlayTrigger>
             <OverlayTrigger
@@ -55,7 +55,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="Mastodon"
               >
-                <FaMastodon size={25} />
+                <FaMastodon size={35} />
               </a>
             </OverlayTrigger>
             <OverlayTrigger
@@ -73,7 +73,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="GitHub"
               >
-                <TfiGithub size={25} />
+                <TfiGithub size={35} />
               </a>
             </OverlayTrigger>
 
@@ -92,7 +92,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="Email"
               >
-                <MdEmail size={25} />
+                <MdEmail size={35} />
               </a>
             </OverlayTrigger>
             <OverlayTrigger
@@ -108,7 +108,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="PGP Public key"
               >
-                <FaUserSecret size={22} />
+                <FaUserSecret size={29} />
               </Link>
             </OverlayTrigger>
             <OverlayTrigger
@@ -126,7 +126,7 @@ function Footer() {
                 className="FooterLink"
                 aria-label="Status page"
               >
-                <FaTrafficLight size={22} />
+                <FaTrafficLight size={29} />
               </a>
             </OverlayTrigger>
           </div>

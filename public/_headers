@@ -1,5 +1,5 @@
 /*
-  Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com https://matomo.stenstromen.se; img-src 'self' https://img.shields.io https://filosofiskaeleonora.se https://openvision.boo https://twaddle.page data:; style-src 'self'; object-src 'none'; upgrade-insecure-requests; form-action 'self'; frame-ancestors 'none'; base-uri 'self';
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; img-src 'self' data:; style-src 'self'; object-src 'none'; upgrade-insecure-requests; form-action 'self'; frame-ancestors 'none'; base-uri 'self';
   Permissions-Policy: camera=(), display-capture=(), geolocation=(), microphone=(), payment=(), usb=(), fullscreen=()
   X-Frame-Options: DENY
   X-XSS-Protection: 0

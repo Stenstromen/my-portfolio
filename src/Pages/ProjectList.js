@@ -8,6 +8,7 @@ import cavestory from "../img/cavestory.webp";
 import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
 import doggate from "../img/doggate.webp";
+import pusheencat from "../img/pusheen-cat.webp";
 import flowerapi from "../img/flowerapi.webp";
 import gologo from "../img/gologo.webp";
 import gomyip from "../img/gomyip.webp";
@@ -111,7 +112,7 @@ const ProjectList = [
     badges: [GO, DOCKER, KUBERNETES],
 },
   {
-    image: "https://filosofiskaeleonora.se/pusheen-cat.png",
+    image: pusheencat,
     title: "Filosofiska Eleonora",
     description:
       "I took the Red Pill, but now I have to live the Blue Pill life.",
@@ -214,7 +215,7 @@ const ProjectList = [
     badges: [REACTNATIVE, TS, DOCKER],
   },
   {
-    image: "https://openvision.boo/assets/logo-2fd1099d.svg",
+    image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICA8cGF0aCBkPSJNMjIgMTJoLTRtLTIgMGE2IDYgMCAwIDAtNiA2djJtNi0yYTYgNiAwIDAgMCA2LTYgNiA2IDAgMCAwLTYtNiA2IDYgMCAwIDAtNiA2IDYgNiAwIDAgMCA2IDZ2MmE2IDYgMCAwIDEtNi02IDYgNiAwIDAgMSA2LTYgNiA2IDAgMCAxIDYgNiA2IDYgMCAwIDEtNiA2bTYtNmg0Ij48L3BhdGg+Cjwvc3ZnPgo=",
     title: "OpenVision",
     description:
       "OpenVision is a web application that allows you to detect objects in images, using Keras MobileNetV3 model in TensorflowJs.",
@@ -263,7 +264,7 @@ const ProjectList = [
     badges: [REACTJS, TS, GO, MARIADB, KUBERNETES],
   },
   {
-    image: "https://twaddle.page/assets/twaddle-c3415e3b.svg",
+    image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgNjAiPgogIDxwYXRoIGZpbGw9ImxpZ2h0Z3JheSIgZD0iTTEwIDEwIFEgMjAgMCwgMzAgMTAgVCA1MCAxMCBUIDcwIDEwIFQgOTAgMTAgUSAxMDAgMCwgMTEwIDEwIiAvPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iMzAiIHI9IjIwIiBmaWxsPSJsaWdodGJsdWUiIC8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSIzMCIgcj0iMTAiIGZpbGw9IndoaXRlIiAvPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIGQ9Ik0gNjAgNDAgUSA3MCA1MCwgODAgNDAgVCAxMDAgNDAiIC8+Cjwvc3ZnPgo=",
     title: "Twaddle",
     description: "Generate gibberish using the distilGP2 model.",
     link: "https://twaddle.page",
