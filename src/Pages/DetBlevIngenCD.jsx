@@ -30,7 +30,6 @@ function DetBlevIngenCD() {
         ease: "easeIn",
         type: "spring",
       }}
-      nonce="xVAsYVe6p2NlPv6L"
     >
       <Helmet>
         <title>Det Blev Ingen CD | Stenstromen.se</title>

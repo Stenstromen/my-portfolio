@@ -80,7 +80,6 @@ function Projects() {
           ease: "easeIn",
           type: "spring",
         }}
-        nonce="xVAsYVe6p2NlPv6L"
       >
         <InfiniteScroll
           dataLength={projects.length}
