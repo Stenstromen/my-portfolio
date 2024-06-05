@@ -2,14 +2,14 @@
 Hash: SHA512
 
 Contact: mailto:info@stenstromen.se
-Expires: 2025-06-4T23:00:00.000Z
+Expires: 2025-06-05T23:00:00.000Z
 Encryption: https://stenstromen.se/pgp
 Preferred-Languages: en, sv
 Canonical: https://stenstromen.se/.well-known/security.txt
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQTqT0iMdQI5Ecl41TxNOlGneeIqiAUCZmAydgAKCRBNOlGneeIq
-iNYCAP9vDhdL3Is4uCdem2MrBOu/EE5ifbLcVMVoziqSJG8GRwD/WH2UU3zDbQuC
-3BcPM9VfnfzNaL0LQJP87Ftlt1HhLAw=
-=vtV9
+iHUEARYKAB0WIQTqT0iMdQI5Ecl41TxNOlGneeIqiAUCZmA0pQAKCRBNOlGneeIq
+iAOoAP9GCPlZAvULvog1NGP7imkgXa4KK+irIKoQpPtj35kKqwEA8fLjq2al8u7h
+jW3T2ZPq8XViD3gwbBIHMJ1H5b0U0wQ=
+=R1zV
 -----END PGP SIGNATURE-----
