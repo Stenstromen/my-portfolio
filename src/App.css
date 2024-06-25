@@ -22,6 +22,14 @@ html {
 
 .Navbar {
   margin-bottom: 4.3rem;
+  transition: all 5s ease-in-out;
+}
+
+.Nav-downscroll {
+  height: 3%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
