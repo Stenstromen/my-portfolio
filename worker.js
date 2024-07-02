@@ -3,51 +3,36 @@ addEventListener('fetch', event => {
 })
 
 async function handleRequest(request) {
-  // Fetch the original response
-  let response = await fetch(request)
+  let response = await fetch(request);
+  const contentType = response.headers.get('Content-Type') || '';
 
-  // Clone the response so we can modify the headers
-  let newResponse = new Response(response.body, response)
+  if (contentType.includes('text/html')) {
+    let body = await response.text();
+    const nonce = Math.random().toString(36).substring(2, 15);
 
-  // Generate a random nonce
-  let nonce = Math.random().toString(36).substring(2, 15)
+    body = body.replace(
+      /<script>([\s\S]*?)window.dataLayer[\s\S]*?<\/script>/,
+      `<script nonce="${nonce}">$1window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag("js", new Date());\ngtag("config", "G-835MSCWR7N");</script>`
+    );
 
-  // Get the existing CSP header
-  let csp = newResponse.headers.get('Content-Security-Policy')
+    let csp = response.headers.get("Content-Security-Policy");
+    if (csp) {
+      csp = csp.replace("script-src 'self'", `script-src 'self' 'nonce-${nonce}'`);
+    } else {
+      csp = `script-src 'self' 'nonce-${nonce}'`;
+    }
 
-  // Add the nonce to the script-src directive
-  csp = csp.replace("script-src 'self'", `script-src 'self' 'nonce-${nonce}'`)
+    let newResponse = new Response(body, {
+      ...response,
+      headers: {
+        ...response.headers,
+        'Content-Security-Policy': csp,
+        'Content-Type': 'text/html',
+      },
+    });
 
-  // Set the modified CSP header
-  newResponse.headers.set('Content-Security-Policy', csp)
+    return newResponse;
+  }
 
-  // Get the body text
-  let bodyText = await newResponse.text()
-
-  // Replace the script tag with the same tag plus the nonce
-  bodyText = bodyText.replace(
-    `<script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-835MSCWR7N");
-    </script>`,
-    `<script nonce="${nonce}">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-835MSCWR7N");
-    </script>`
-  )
-
-  // Return the modified response
-  return new Response(bodyText, {
-    headers: newResponse.headers
-  })
+  return response;
 }
