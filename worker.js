@@ -12,7 +12,7 @@ async function handleRequest(request) {
 
     body = body.replace(
       /<script>([\s\S]*?)window.dataLayer[\s\S]*?<\/script>/,
-      `<script nonce="${nonce}">$1window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag("js", new Date());\ngtag("config", "G-835MSCWR7N");</script>`
+      `<script nonce="${nonce}">window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag("js", new Date());\ngtag("config", "G-835MSCWR7N");</script>`
     );
 
     let csp = response.headers.get("Content-Security-Policy");
