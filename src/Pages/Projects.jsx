@@ -114,15 +114,26 @@ function Projects() {
             onClick={scrollToTop}
             style={{ position: "fixed", right: "15px", bottom: "15px" }}
           >
-            <TbSquareArrowUpFilled
+            <div
               style={{
-                transitionDuration: "0s",
-                transitionTimingFunction: "revert",
-                transitionDelay: "0s",
+                width: "55px",
+                height: "55px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                cursor: "pointer",
               }}
-              size={55}
-              color="#f686bd"
-            />
+            >
+              <TbSquareArrowUpFilled
+                style={{
+                  transitionDuration: "0s",
+                  transitionTimingFunction: "revert",
+                  transitionDelay: "0s",
+                }}
+                size={55}
+                color="#f686bd"
+              />
+            </div>
           </a>
         )}
       </motion.div>

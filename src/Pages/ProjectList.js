@@ -27,8 +27,10 @@ import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
 import linkvigil from "../img/linkvigil.webp";
+import lotemp from "../img/lotemp.webp";
 import lynxgate from "../img/lynxgate.webp";
 import outlinewikibackup from "../img/outlinewikibackup.webp";
+import rustyalias from "../img/rustyalias.webp";
 import BadgesList from "../Components/BadgesList";
 
 const {
@@ -198,6 +200,14 @@ const ProjectList = [
     badges: [GO],
   },
   {
+    image: lotemp,
+    title: "LoTemp",
+    description: "Fetch Current Local Outside Temperature In the Terminal",
+    link: "https://github.com/Stenstromen/lotemp/releases/latest/",
+    github: "https://github.com/Stenstromen/lotemp",
+    badges: [RUST],
+  },
+  {
     image: lynxgate,
     title: "LynxGate",
     description: "API Authentication GW for use with Nginx Ingress .",
@@ -264,6 +274,14 @@ const ProjectList = [
     link: "http://readthenburn.se",
     github: "https://github.com/Stenstromen/readthenburn-frontend",
     badges: [REACTJS, GO, MARIADB, KUBERNETES],
+  },
+  {
+    image: rustyalias,
+    title: "RustyAlias",
+    description: " Wildcard DNS for any IP Address.",
+    link: "https://github.com/Stenstromen/rustyalias",
+    github: "https://github.com/Stenstromen/rustyalias",
+    badges: [RUST],
   },
   {
     image: snapnote,
