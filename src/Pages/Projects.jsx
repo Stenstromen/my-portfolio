@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback, useRef } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
@@ -64,6 +64,20 @@ function Projects() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
+  const observer = useRef();
+  const lastProjectElementRef = useCallback(
+    (node) => {
+      if (observer.current) observer.current.disconnect();
+      observer.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && hasMoreProjects) {
+          loadMoreProjects();
+        }
+      });
+      if (node) observer.current.observe(node);
+    },
+    [hasMoreProjects]
+  );
+
   return (
     <div>
       <Helmet>
@@ -73,12 +87,12 @@ function Projects() {
         <meta property="og:image:height" content="512" />
       </Helmet>
       <motion.div
-        initial={{ y: "+1000px", opacity: 0 }}
+        initial={{ y: "+500px", opacity: 0 }}
         animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
-          duration: 1.5,
-          ease: "easeIn",
-          type: "spring",
+          duration: 0.1,
+          ease: "linear",
+          type: "tween",
         }}
       >
         <InfiniteScroll
@@ -90,9 +104,22 @@ function Projects() {
           className="ProjectsList"
         >
           {projects.map(
-            ({ image, title, description, link, github, badges }) => {
-              return (
-                <>
+            ({ image, title, description, link, github, badges }, index) => {
+              if (projects.length === index + 1) {
+                return (
+                  <div ref={lastProjectElementRef} key={title}>
+                    <ProjectCard
+                      image={image}
+                      title={title}
+                      description={description}
+                      link={link}
+                      github={github}
+                      badges={badges}
+                    />
+                  </div>
+                );
+              } else {
+                return (
                   <ProjectCard
                     key={title}
                     image={image}
@@ -102,8 +129,8 @@ function Projects() {
                     github={github}
                     badges={badges}
                   />
-                </>
-              );
+                );
+              }
             }
           )}
         </InfiniteScroll>

@@ -20,9 +20,9 @@ function Contact() {
       initial={{ y: "+840px", opacity: 0 }}
       animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
       transition={{
-        duration: 1.5,
-        ease: "easeIn",
-        type: "spring",
+        duration: 0.1,
+        ease: "linear",
+        type: "tween",
       }}
     >
       <Helmet>

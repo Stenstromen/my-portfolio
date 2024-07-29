@@ -23,12 +23,12 @@ function Home() {
         <meta property="og:image:height" content="512" />
       </Helmet>
       <motion.div
-        initial={{ y: "+400px", opacity: 0 }}
+        initial={{ y: "+200px", opacity: 0 }}
         animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
-          duration: 1.5,
-          ease: "easeIn",
-          type: "spring",
+          duration: 0.1,
+          ease: "backIn",
+          type: "tween",
         }}
       >
         <h1 className="HomeH1">Hello!</h1>
@@ -39,12 +39,12 @@ function Home() {
       </motion.div>
 
       <motion.div
-        initial={{ x: "+1000px", opacity: 0 }}
+        initial={{ x: "+500px", opacity: 0 }}
         animate={{ x: 0, opacity: isHydrated ? 1 : 0 }}
         transition={{
-          duration: 1.5,
-          ease: "easeIn",
-          type: "spring",
+          duration: 0.1,
+          ease: "linear",
+          type: "tween",
         }}
       >
         <div className="BadgesContainer">
