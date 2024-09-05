@@ -13,7 +13,9 @@ import flowerapi from "../img/flowerapi.webp";
 import gologo from "../img/gologo.webp";
 import gomyip from "../img/gomyip.webp";
 import grumpypgp from "../img/grumpypgp.webp";
+import grumpypgpweb from "../img/grumpygpgweb.webp";
 import khaossweeper from "../img/khaossweeper.webp";
+import kubectlpvcmount from "../img/kubectl-pvcmount.webp";
 import miniomatic from "../img/miniomatic.svg";
 import ncregistry from "../img/ncregistry.webp";
 import noclip from "../img/noclip.webp";
@@ -164,6 +166,14 @@ const ProjectList = [
     link: "https://apps.apple.com/se/app/grumpypgp/id6474478177",
     github: "https://github.com/Stenstromen/grumpypgp",
     badges: [REACTNATIVE, TS],
+  },
+  {
+    image: grumpypgpweb,
+    title: "GrumpyPGPWeb",
+    description: "PGP tool for the web, because the cat is still grumpy.",
+    link: "https://grumpycat.se",
+    github: "https://github.com/Stenstromen/grumpypgpweb",
+    badges: [REACTJS, TS],
   },
   {
     image: ncregistry,
@@ -341,6 +351,14 @@ const ProjectList = [
     description: "ifconfig.co copycat, written in Go",
     link: "https://github.com/Stenstromen/gomyip",
     github: "https://github.com/Stenstromen/gomyip",
+    badges: [GO, KUBERNETES],
+  },
+  {
+    image: kubectlpvcmount,
+    title: "kubectl-pvcmount",
+    description: "Go binary for temporary mounting of PVCs to a pod. This is useful for debugging purposes or for copying data from a PVC to another location.",
+    link: "https://github.com/Stenstromen/kubectl-pvcmount/releases/latest/",
+    github: "https://github.com/Stenstromen/kubectl-pvcmount",
     badges: [GO, KUBERNETES],
   },
   {
