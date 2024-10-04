@@ -24,7 +24,7 @@ import nyancatchat from "../img/nyancatchat.webp";
 import peppojnet from "../img/peppojnet.webp";
 import pusheense from "../img/pusheense.webp";
 import pwgen from "../img/pwgen.webp";
-import readthenburn from "../img/readthenburn.webp";
+//import readthenburn from "../img/readthenburn.webp";
 import registryport from "../img/registryport.webp";
 import snapnote from "../img/snapnote.webp";
 import vault from "../img/vault.webp";
@@ -276,7 +276,7 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/pusheen",
     badges: [REACTJS, CLOUDFLARE],
   },
-  {
+  /*   {
     image: readthenburn,
     title: "ReadThenBurn.se",
     description:
@@ -284,7 +284,7 @@ const ProjectList = [
     link: "http://readthenburn.se",
     github: "https://github.com/Stenstromen/readthenburn-frontend",
     badges: [REACTJS, GO, MARIADB, KUBERNETES],
-  },
+  }, */
   {
     image: rustyalias,
     title: "RustyAlias",
@@ -356,7 +356,8 @@ const ProjectList = [
   {
     image: kubectlpvcmount,
     title: "kubectl-pvcmount",
-    description: "Go binary for temporary mounting of PVCs to a pod. This is useful for debugging purposes or for copying data from a PVC to another location.",
+    description:
+      "Go binary for temporary mounting of PVCs to a pod. This is useful for debugging purposes or for copying data from a PVC to another location.",
     link: "https://github.com/Stenstromen/kubectl-pvcmount/releases/latest/",
     github: "https://github.com/Stenstromen/kubectl-pvcmount",
     badges: [GO, KUBERNETES],
