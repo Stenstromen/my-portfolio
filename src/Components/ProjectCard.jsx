@@ -21,13 +21,24 @@ function ProjectCard({ image, title, description, link, github, badges }) {
     >
       <div className="ProjectCard">
         <div className="ProjectCardContent">
-          <img
-            className="ProjectCardImage"
-            width="196.19px"
-            height="196.19px"
-            alt={title}
-            src={image}
-          />
+          <a 
+            href={link} 
+            rel="noreferrer" 
+            target="_blank" 
+            title={`Visit ${title}`}
+          >
+            <img
+              className="ProjectCardImage"
+              width="196.19px"
+              height="196.19px"
+              alt={title}
+              src={image}
+              style={{
+                transition: 'transform 0.3s ease-in-out, filter 0.3s ease-in-out',
+                cursor: 'pointer',
+              }}
+            />
+          </a>
         </div>
         <h3 className="ProjectCardTitle">{title}</h3>
         <p className="ProjectCardDescription">{description}</p>

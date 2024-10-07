@@ -100,10 +100,13 @@ html {
   margin-top: 10px;
   margin-left: 10px;
   background-color: #d8e2dc;
+  overflow: hidden;
 }
 
 .ProjectCardImage {
   height: 196.2px;
+  transform: scale(1);
+  filter: contrast(100%);
 }
 
 .ProjectCardTitle {
@@ -292,4 +295,9 @@ html {
     position: relative;
     padding-top: 25px;
   }
+}
+
+.ProjectCard:hover .ProjectCardImage {
+  transform: scale(1.05);
+  filter: contrast(200%);
 }
