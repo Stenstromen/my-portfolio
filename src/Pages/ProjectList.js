@@ -1,7 +1,6 @@
 import FlareIP from "../img/flareip.svg";
 import FlareGHStats from "../img/flareghstats.webp";
 import arfenhouse from "../img/arfenhouse.webp";
-import axfr from "../img/axfr.webp";
 import bf2042ico from "../img/bf2042ico.webp";
 import bright from "../img/bright.webp";
 import cavestory from "../img/cavestory.webp";
@@ -57,14 +56,6 @@ const {
 } = BadgesList;
 
 const ProjectList = [
-  {
-    image: axfr,
-    title: "AXFR.se",
-    description: "List amount/View brand new .SE and .NU Domains.",
-    link: "https://axfr.se",
-    github: "https://github.com/Stenstromen/axfr-frontend",
-    badges: [REACTJS, GO, MARIADB, KUBERNETES],
-  },
   {
     image: bf2042ico,
     title: "BF2042Stats",
