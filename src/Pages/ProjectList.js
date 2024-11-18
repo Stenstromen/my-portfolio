@@ -1,6 +1,5 @@
 import FlareIP from "../img/flareip.svg";
 import FlareGHStats from "../img/flareghstats.webp";
-import arfenhouse from "../img/arfenhouse.webp";
 import bf2042ico from "../img/bf2042ico.webp";
 import bright from "../img/bright.webp";
 import cavestory from "../img/cavestory.webp";
