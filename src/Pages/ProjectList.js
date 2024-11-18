@@ -370,14 +370,14 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/vaultctx",
     badges: [RUST],
   },
-  {
+/*   {
     image: arfenhouse,
     title: "Arfenhouse",
     description: "Arfenhouse fan page.",
     link: "https://arfenhou.se",
     github: "https://github.com/Stenstromen/arfenhouse",
     badges: [REACTJS, TS, CLOUDFLARE],
-  },
+  }, */
   {
     image: detblevingencd,
     title: "det-blev-ingen-cd.se",
