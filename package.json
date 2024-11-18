@@ -27,7 +27,7 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.3",
     "eslint": "^8.40.0",
     "eslint-plugin-react": "^7.32.2",
     "purgecss": "^6.0.0",
