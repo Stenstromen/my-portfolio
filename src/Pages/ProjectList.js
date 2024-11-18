@@ -16,7 +16,7 @@ import khaossweeper from "../img/khaossweeper.webp";
 import kubectlpvcmount from "../img/kubectl-pvcmount.webp";
 import miniomatic from "../img/miniomatic.svg";
 import ncregistry from "../img/ncregistry.webp";
-import noclip from "../img/noclip.webp";
+//import noclip from "../img/noclip.webp";
 import non from "../img/non.webp";
 import nyancatchat from "../img/nyancatchat.webp";
 import peppojnet from "../img/peppojnet.webp";
@@ -174,14 +174,14 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/ncregistry",
     badges: [GO, DOCKER],
   },
-  {
+/*   {
     image: noclip,
     title: "Noclip.se",
     description: "Share/Live share current location.",
     link: "http://www.noclip.se",
     github: "https://github.com/Stenstromen/phyaddr",
     badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
-  },
+  }, */
   {
     image: non,
     title: "No\\n",
