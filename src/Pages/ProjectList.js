@@ -19,6 +19,7 @@ import ncregistry from "../img/ncregistry.webp";
 //import noclip from "../img/noclip.webp";
 import non from "../img/non.webp";
 import nyancatchat from "../img/nyancatchat.webp";
+import nyancat from "../img/nyancat.webp";
 import peppojnet from "../img/peppojnet.webp";
 import pusheense from "../img/pusheense.webp";
 import pwgen from "../img/pwgen.webp";
@@ -38,6 +39,7 @@ const {
   CSS,
   DOCKER,
   GO,
+  C,
   HTML,
   JS,
   KUBERNETES,
@@ -189,6 +191,14 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/non/releases/latest/",
     github: "https://github.com/Stenstromen/non",
     badges: [RUST],
+  },
+  {
+    image: nyancat,
+    title: "NyanCat",
+    description: "Nyancat for the terminal. Shamelessly stolen from github.com/klange/nyancat, but with a added telnet server.",
+    link: "https://github.com/Stenstromen/nyancat/releases/latest/",
+    github: "https://github.com/Stenstromen/nyancat",
+    badges: [C],
   },
   {
     image: linkvigil,
