@@ -6,8 +6,7 @@
   "scripts": {
     "start": "vite --host",
     "build": "vite build",
-    "serve": "vite preview",
-    "postbuild": "purgecss --config purgecss.config.cjs && node postbuild.mjs"
+    "serve": "vite preview"
   },
   "dependencies": {
     "@prerenderer/prerenderer": "^1.2.5",
