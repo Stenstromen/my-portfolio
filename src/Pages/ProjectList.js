@@ -6,6 +6,7 @@ import cavestory from "../img/cavestory.webp";
 import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
 import doggate from "../img/doggate.webp";
+import doh from "../img/doh.webp";
 import pusheencat from "../img/pusheen-cat.webp";
 import flowerapi from "../img/flowerapi.webp";
 import gologo from "../img/gologo.webp";
@@ -106,6 +107,14 @@ const ProjectList = [
       "DogGate, a simple and easy authentication system for your web applications.",
     link: "https://github.com/Stenstromen/doggate",
     github: "https://github.com/Stenstromen/doggate",
+    badges: [GO, DOCKER, KUBERNETES],
+  },
+  {
+    image: doh,
+    title: "DNS-over-HTTPS",
+    description: "Fork of github.com/m13253/dns-over-https. With added Redis Cache Support and Scratch Container.",
+    link: "https://github.com/Stenstromen/dns-over-https",
+    github: "https://github.com/Stenstromen/dns-over-https",
     badges: [GO, DOCKER, KUBERNETES],
   },
   {
