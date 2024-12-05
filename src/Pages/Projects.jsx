@@ -1,41 +1,29 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
 import ProjectCard from "../Components/ProjectCard";
 import EndMessage from "../Components/EndMessage";
 import LoadMore from "../Components/LoadMore";
-import { TbSquareArrowUpFilled } from "react-icons/tb";
-import InfiniteScroll from "react-infinite-scroll-component";
 import projects_social from "../img/projects_social.png";
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
   const [projects, setProjects] = useState([]);
-  const [itemsToLoad, setItemsToLoad] = useState(3);
+  const [itemsToLoad, setItemsToLoad] = useState(6);
   const hasMoreProjects = projects.length < ProjectList.length;
-  const [isVisible, setIsVisible] = useState(false);
+  const loadMoreButtonRef = useRef(null);
 
   const loadMoreProjects = () => {
-    setProjects((projects) => [
-      ...projects,
-      ...ProjectList.slice(projects.length, projects.length + itemsToLoad),
-    ]);
-  };
-
-  const toggleVisibility = () => {
-    if (window.scrollY > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    const nextBatch = ProjectList.slice(
+      projects.length,
+      projects.length + itemsToLoad
+    );
+    setProjects([...projects, ...nextBatch]);
+    
+    setTimeout(() => {
+      loadMoreButtonRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
   };
 
   useEffect(() => {
@@ -45,7 +33,7 @@ function Projects() {
       setItemsToLoad(isMobile ? 1 : 3);
     };
 
-    loadMoreProjects();
+    setProjects(ProjectList.slice(0, itemsToLoad));
     updateItemsToLoad();
 
     window.addEventListener("resize", updateItemsToLoad);
@@ -54,29 +42,6 @@ function Projects() {
       window.removeEventListener("resize", updateItemsToLoad);
     };
   }, []);
-
-  useEffect(() => {
-    loadMoreProjects();
-  }, [itemsToLoad]);
-
-  useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
-  }, []);
-
-  const observer = useRef();
-  const lastProjectElementRef = useCallback(
-    (node) => {
-      if (observer.current) observer.current.disconnect();
-      observer.current = new IntersectionObserver((entries) => {
-        if (entries[0].isIntersecting && hasMoreProjects) {
-          loadMoreProjects();
-        }
-      });
-      if (node) observer.current.observe(node);
-    },
-    [hasMoreProjects]
-  );
 
   return (
     <div>
@@ -95,74 +60,23 @@ function Projects() {
           type: "tween",
         }}
       >
-        <InfiniteScroll
-          dataLength={projects.length}
-          next={loadMoreProjects}
-          hasMore={hasMoreProjects}
-          loader={<h4>Loading...</h4>}
-          endMessage={<EndMessage />}
-          className="ProjectsList"
-        >
-          {projects.map(
-            ({ image, title, description, link, github, badges }, index) => {
-              if (projects.length === index + 1) {
-                return (
-                  <div ref={lastProjectElementRef} key={title}>
-                    <ProjectCard
-                      image={image}
-                      title={title}
-                      description={description}
-                      link={link}
-                      github={github}
-                      badges={badges}
-                    />
-                  </div>
-                );
-              } else {
-                return (
-                  <ProjectCard
-                    key={title}
-                    image={image}
-                    title={title}
-                    description={description}
-                    link={link}
-                    github={github}
-                    badges={badges}
-                  />
-                );
-              }
-            }
-          )}
-        </InfiniteScroll>
+        <div className="ProjectsList">
+          {projects.map(({ image, title, description, link, github, badges }) => (
+            <ProjectCard
+              key={title}
+              image={image}
+              title={title}
+              description={description}
+              link={link}
+              github={github}
+              badges={badges}
+            />
+          ))}
+          <div ref={loadMoreButtonRef} style={{ marginTop: "200px" }} />
+        </div>
 
         {hasMoreProjects && <LoadMore loadMoreProjects={loadMoreProjects} />}
-        {isVisible && (
-          <a
-            onClick={scrollToTop}
-            style={{ position: "fixed", right: "15px", bottom: "15px" }}
-          >
-            <div
-              style={{
-                width: "55px",
-                height: "55px",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                cursor: "pointer",
-              }}
-            >
-              <TbSquareArrowUpFilled
-                style={{
-                  transitionDuration: "0s",
-                  transitionTimingFunction: "revert",
-                  transitionDelay: "0s",
-                }}
-                size={55}
-                color="#f686bd"
-              />
-            </div>
-          </a>
-        )}
+        {!hasMoreProjects && <EndMessage />}
       </motion.div>
     </div>
   );
