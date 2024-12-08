@@ -2,7 +2,7 @@ import FlareIP from "../img/flareip.svg";
 import FlareGHStats from "../img/flareghstats.webp";
 import bf2042ico from "../img/bf2042ico.webp";
 import bright from "../img/bright.webp";
-import cavestory from "../img/cavestory.webp";
+// import cavestory from "../img/cavestory.webp";
 import detblevingencd from "../img/detblevingencd.webp";
 import dockerctx from "../img/dockerctx.webp";
 import doggate from "../img/doggate.webp";
@@ -17,7 +17,7 @@ import khaossweeper from "../img/khaossweeper.webp";
 import kubectlpvcmount from "../img/kubectl-pvcmount.webp";
 import miniomatic from "../img/miniomatic.svg";
 import ncregistry from "../img/ncregistry.webp";
-//import noclip from "../img/noclip.webp";
+// import noclip from "../img/noclip.webp";
 import non from "../img/non.webp";
 import nyancatchat from "../img/nyancatchat.webp";
 import nyancat from "../img/nyancat.webp";
@@ -75,14 +75,14 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/bright",
     badges: [RUST],
   },
-  {
+  /*   {
     image: cavestory,
     title: "Cavestory.se",
     description: "CaveStory game fan page... Simple enough.",
     link: "https://cavestory.se",
     github: "https://github.com/Stenstromen/cavestoryse",
     badges: [HTML, CSS, CLOUDFLARE],
-  },
+  }, */
   {
     image: nyancatchat,
     title: "Chat.NyanCat.se",
@@ -112,7 +112,8 @@ const ProjectList = [
   {
     image: doh,
     title: "DNS-over-HTTPS",
-    description: "Fork of github.com/m13253/dns-over-https. With added Redis Cache Support and Scratch Container.",
+    description:
+      "Fork of github.com/m13253/dns-over-https. With added Redis Cache Support and Scratch Container.",
     link: "https://github.com/Stenstromen/dns-over-https",
     github: "https://github.com/Stenstromen/dns-over-https",
     badges: [GO, DOCKER, KUBERNETES],
@@ -185,7 +186,7 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/ncregistry",
     badges: [GO, DOCKER],
   },
-/*   {
+  /*   {
     image: noclip,
     title: "Noclip.se",
     description: "Share/Live share current location.",
@@ -204,7 +205,8 @@ const ProjectList = [
   {
     image: nyancat,
     title: "NyanCat",
-    description: "Nyancat for the terminal. Shamelessly stolen from github.com/klange/nyancat, but with a added telnet server.",
+    description:
+      "Nyancat for the terminal. Shamelessly stolen from github.com/klange/nyancat, but with a added telnet server.",
     link: "https://github.com/Stenstromen/nyancat/releases/latest/",
     github: "https://github.com/Stenstromen/nyancat",
     badges: [C],
@@ -389,7 +391,7 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/vaultctx",
     badges: [RUST],
   },
-/*   {
+  /*   {
     image: arfenhouse,
     title: "Arfenhouse",
     description: "Arfenhouse fan page.",
