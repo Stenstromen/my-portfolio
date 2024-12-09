@@ -4,6 +4,6 @@
   X-XSS-Protection: 0
   Referrer-Policy: no-referrer
   access-control-allow-origin: https://stenstromen.se
-  Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org https://google-analytics.com https://*.google-analytics.com; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; img-src 'self' data:; style-src 'self'; object-src 'none'; upgrade-insecure-requests; form-action 'self'; frame-ancestors 'none'; base-uri 'self';
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://keys.openpgp.org https://google-analytics.com https://*.google-analytics.com; script-src 'self' https://www.googletagmanager.com https://static.cloudflareinsights.com; img-src 'self' data:; style-src 'self'; object-src 'none'; upgrade-insecure-requests; form-action 'self'; frame-ancestors 'none'; base-uri 'self'
 /.well-known/apple-app-site-association
   Content-Type: application/json
