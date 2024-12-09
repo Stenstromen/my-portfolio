@@ -59,12 +59,117 @@ const {
 
 const ProjectList = [
   {
-    image: bf2042ico,
-    title: "BF2042Stats",
-    description: "Battlefield 2042 Stats page",
-    link: "https://battlefield2042.se",
-    github: "https://github.com/Stenstromen/bf2042stats",
-    badges: [REACTJS, TS, CLOUDFLARE],
+    image: snapnote,
+    title: "Snapnote",
+    description: "Open source note taking application.",
+    link: "https://snapnote.online",
+    github: "https://github.com/Stenstromen/snapnote",
+    badges: [REACTJS, TS, GO, MARIADB, KUBERNETES],
+  },
+  {
+    image:
+      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgNjAiPgogIDxwYXRoIGZpbGw9ImxpZ2h0Z3JheSIgZD0iTTEwIDEwIFEgMjAgMCwgMzAgMTAgVCA1MCAxMCBUIDcwIDEwIFQgOTAgMTAgUSAxMDAgMCwgMTEwIDEwIiAvPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iMzAiIHI9IjIwIiBmaWxsPSJsaWdodGJsdWUiIC8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSIzMCIgcj0iMTAiIGZpbGw9IndoaXRlIiAvPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIGQ9Ik0gNjAgNDAgUSA3MCA1MCwgODAgNDAgVCAxMDAgNDAiIC8+Cjwvc3ZnPgo=",
+    title: "Twaddle",
+    description: "Generate gibberish using the distilGP2 model.",
+    link: "https://twaddle.page",
+    github: "https://github.com/Stenstromen/twaddle-frontend",
+    badges: [REACTJS, TS, PYTHON, TENSORFLOW, KUBERNETES],
+  },
+  {
+    image: readthenburn,
+    title: "ReadThenBurn.se",
+    description:
+      "Create temporary, shareable, messages. Only readable once. Read-Then-Burn.",
+    link: "http://readthenburn.se",
+    github: "https://github.com/Stenstromen/readthenburn-frontend",
+    badges: [REACTJS, GO, MARIADB, KUBERNETES],
+  },
+  {
+    image: nyancat,
+    title: "NyanCat",
+    description:
+      "Nyancat for the terminal. Shamelessly stolen from github.com/klange/nyancat, but with a added telnet server.",
+    link: "https://github.com/Stenstromen/nyancat/releases/latest/",
+    github: "https://github.com/Stenstromen/nyancat",
+    badges: [C],
+  },
+  {
+    image: registryport,
+    title: "RegistryPort",
+    description:
+      "RegistryPort brings the power of Docker Registries to the palm of your hand.",
+    link: "https://apps.apple.com/us/app/registryport/id6464222587",
+    github: "https://github.com/Stenstromen/registryport",
+    badges: [REACTNATIVE, TS, DOCKER],
+  },
+  {
+    image: lynxgate,
+    title: "LynxGate",
+    description: "API Authentication GW for use with Nginx Ingress .",
+    link: "https://github.com/Stenstromen/lynxgate/pkgs/container/lynxgate",
+    github: "https://github.com/Stenstromen/lynxgate",
+    badges: [GO, DOCKER, KUBERNETES],
+  },
+  {
+    image: grumpypgp,
+    title: "GrumpyPGP",
+    description: "The lack of a good PGP app for iOS makes the cat grumpy.",
+    link: "https://apps.apple.com/se/app/grumpypgp/id6474478177",
+    github: "https://github.com/Stenstromen/grumpypgp",
+    badges: [REACTNATIVE, TS],
+  },
+  {
+    image: grumpypgpweb,
+    title: "GrumpyPGPWeb",
+    description: "PGP tool for the web, because the cat is still grumpy.",
+    link: "https://grumpycat.se",
+    github: "https://github.com/Stenstromen/grumpypgpweb",
+    badges: [REACTJS, TS],
+  },
+  {
+    image: doggate,
+    title: "DogGate",
+    description:
+      "DogGate, a simple and easy authentication system for your web applications.",
+    link: "https://github.com/Stenstromen/doggate",
+    github: "https://github.com/Stenstromen/doggate",
+    badges: [GO, DOCKER, KUBERNETES],
+  },
+  {
+    image: miniomatic,
+    title: "Miniomatic",
+    description:
+      "Backend service API for Minio that provides a simple way to create and manage Minio instances on Kubernetes.",
+    link: "https://github.com/Stenstromen/miniomatic/releases/latest/",
+    github: "https://github.com/Stenstromen/minomatic",
+    badges: [GO, DOCKER, KUBERNETES],
+  },
+  {
+    image: kubectlpvcmount,
+    title: "kubectl-pvcmount",
+    description:
+      "Go binary for temporary mounting of PVCs to a pod. This is useful for debugging purposes or for copying data from a PVC to another location.",
+    link: "https://github.com/Stenstromen/kubectl-pvcmount/releases/latest/",
+    github: "https://github.com/Stenstromen/kubectl-pvcmount",
+    badges: [GO, KUBERNETES],
+  },
+  {
+    image: khaossweeper,
+    title: "KhaosSweeper",
+    description:
+      "Minesweeper game that randomly kills pods in your Kubernetes cluster, when a mine is hit, because why not?",
+    link: "https://github.com/Stenstromen/khaossweeper/releases/latest/",
+    github: "https://github.com/Stenstromen/khaossweeper",
+    badges: [GO, KUBERNETES],
+  },
+  {
+    image: FlareIP,
+    title: "FlareIP",
+    description:
+      "Cloudflare Worker to get the client IP address and other stats.",
+    link: "https://addr.se/readme",
+    github: "https://github.com/Stenstromen/flareip",
+    badges: [TS, CLOUDFLARE],
   },
   {
     image: bright,
@@ -75,14 +180,23 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/bright",
     badges: [RUST],
   },
-  /*   {
-    image: cavestory,
-    title: "Cavestory.se",
-    description: "CaveStory game fan page... Simple enough.",
-    link: "https://cavestory.se",
-    github: "https://github.com/Stenstromen/cavestoryse",
-    badges: [HTML, CSS, CLOUDFLARE],
-  }, */
+  {
+    image: bf2042ico,
+    title: "BF2042Stats",
+    description: "Battlefield 2042 Stats page",
+    link: "https://battlefield2042.se",
+    github: "https://github.com/Stenstromen/bf2042stats",
+    badges: [REACTJS, TS, CLOUDFLARE],
+  },
+  {
+    image: doh,
+    title: "DNS-over-HTTPS",
+    description:
+      "Fork of github.com/m13253/dns-over-https. With added Redis Cache Support and Scratch Container.",
+    link: "https://github.com/Stenstromen/dns-over-https",
+    github: "https://github.com/Stenstromen/dns-over-https",
+    badges: [GO, DOCKER, KUBERNETES],
+  },
   {
     image: nyancatchat,
     title: "Chat.NyanCat.se",
@@ -99,24 +213,6 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/dockerctx/releases/latest/",
     github: "https://github.com/Stenstromen/dockerctx",
     badges: [SHELL],
-  },
-  {
-    image: doggate,
-    title: "DogGate",
-    description:
-      "DogGate, a simple and easy authentication system for your web applications.",
-    link: "https://github.com/Stenstromen/doggate",
-    github: "https://github.com/Stenstromen/doggate",
-    badges: [GO, DOCKER, KUBERNETES],
-  },
-  {
-    image: doh,
-    title: "DNS-over-HTTPS",
-    description:
-      "Fork of github.com/m13253/dns-over-https. With added Redis Cache Support and Scratch Container.",
-    link: "https://github.com/Stenstromen/dns-over-https",
-    github: "https://github.com/Stenstromen/dns-over-https",
-    badges: [GO, DOCKER, KUBERNETES],
   },
   {
     image: outlinewikibackup,
@@ -136,15 +232,6 @@ const ProjectList = [
     badges: [REACTJS, CLOUDFLARE],
   },
   {
-    image: FlareIP,
-    title: "FlareIP",
-    description:
-      "Cloudflare Worker to get the client IP address and other stats.",
-    link: "https://addr.se/readme",
-    github: "https://github.com/Stenstromen/flareip",
-    badges: [TS, CLOUDFLARE],
-  },
-  {
     image: FlareGHStats,
     title: "FlareGHStats",
     description: "Cloudflare Worker to get the GitHub stats for a user.",
@@ -162,22 +249,6 @@ const ProjectList = [
     badges: [NODEJS, KUBERNETES],
   },
   {
-    image: grumpypgp,
-    title: "GrumpyPGP",
-    description: "The lack of a good PGP app for iOS makes the cat grumpy.",
-    link: "https://apps.apple.com/se/app/grumpypgp/id6474478177",
-    github: "https://github.com/Stenstromen/grumpypgp",
-    badges: [REACTNATIVE, TS],
-  },
-  {
-    image: grumpypgpweb,
-    title: "GrumpyPGPWeb",
-    description: "PGP tool for the web, because the cat is still grumpy.",
-    link: "https://grumpycat.se",
-    github: "https://github.com/Stenstromen/grumpypgpweb",
-    badges: [REACTJS, TS],
-  },
-  {
     image: ncregistry,
     title: "NcRegistry",
     description:
@@ -186,14 +257,6 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/ncregistry",
     badges: [GO, DOCKER],
   },
-  /*   {
-    image: noclip,
-    title: "Noclip.se",
-    description: "Share/Live share current location.",
-    link: "http://www.noclip.se",
-    github: "https://github.com/Stenstromen/phyaddr",
-    badges: [HTML, CSS, JS, NODEJS, SOCKETIO, KUBERNETES],
-  }, */
   {
     image: non,
     title: "No\\n",
@@ -201,15 +264,6 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/non/releases/latest/",
     github: "https://github.com/Stenstromen/non",
     badges: [RUST],
-  },
-  {
-    image: nyancat,
-    title: "NyanCat",
-    description:
-      "Nyancat for the terminal. Shamelessly stolen from github.com/klange/nyancat, but with a added telnet server.",
-    link: "https://github.com/Stenstromen/nyancat/releases/latest/",
-    github: "https://github.com/Stenstromen/nyancat",
-    badges: [C],
   },
   {
     image: linkvigil,
@@ -227,32 +281,6 @@ const ProjectList = [
     link: "https://github.com/Stenstromen/lotemp/releases/latest/",
     github: "https://github.com/Stenstromen/lotemp",
     badges: [RUST],
-  },
-  {
-    image: lynxgate,
-    title: "LynxGate",
-    description: "API Authentication GW for use with Nginx Ingress .",
-    link: "https://github.com/Stenstromen/lynxgate/pkgs/container/lynxgate",
-    github: "https://github.com/Stenstromen/lynxgate",
-    badges: [GO, DOCKER, KUBERNETES],
-  },
-  {
-    image: miniomatic,
-    title: "Miniomatic",
-    description:
-      "Backend service API for Minio that provides a simple way to create and manage Minio instances on Kubernetes.",
-    link: "https://github.com/Stenstromen/miniomatic/releases/latest/",
-    github: "https://github.com/Stenstromen/minomatic",
-    badges: [GO, DOCKER, KUBERNETES],
-  },
-  {
-    image: registryport,
-    title: "RegistryPort",
-    description:
-      "RegistryPort brings the power of Docker Registries to the palm of your hand.",
-    link: "https://apps.apple.com/us/app/registryport/id6464222587",
-    github: "https://github.com/Stenstromen/registryport",
-    badges: [REACTNATIVE, TS, DOCKER],
   },
   {
     image:
@@ -288,38 +316,12 @@ const ProjectList = [
     badges: [REACTJS, CLOUDFLARE],
   },
   {
-    image: readthenburn,
-    title: "ReadThenBurn.se",
-    description:
-      "Create temporary, shareable, messages. Only readable once. Read-Then-Burn.",
-    link: "http://readthenburn.se",
-    github: "https://github.com/Stenstromen/readthenburn-frontend",
-    badges: [REACTJS, GO, MARIADB, KUBERNETES],
-  },
-  {
     image: rustyalias,
     title: "RustyAlias",
     description: " Wildcard DNS for any IP Address.",
     link: "https://github.com/Stenstromen/rustyalias",
     github: "https://github.com/Stenstromen/rustyalias",
     badges: [RUST],
-  },
-  {
-    image: snapnote,
-    title: "Snapnote",
-    description: "Open source note taking application.",
-    link: "https://snapnote.online",
-    github: "https://github.com/Stenstromen/snapnote",
-    badges: [REACTJS, TS, GO, MARIADB, KUBERNETES],
-  },
-  {
-    image:
-      "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgNjAiPgogIDxwYXRoIGZpbGw9ImxpZ2h0Z3JheSIgZD0iTTEwIDEwIFEgMjAgMCwgMzAgMTAgVCA1MCAxMCBUIDcwIDEwIFQgOTAgMTAgUSAxMDAgMCwgMTEwIDEwIiAvPgogIDxjaXJjbGUgY3g9IjYwIiBjeT0iMzAiIHI9IjIwIiBmaWxsPSJsaWdodGJsdWUiIC8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSIzMCIgcj0iMTAiIGZpbGw9IndoaXRlIiAvPgogIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iYmxhY2siIGQ9Ik0gNjAgNDAgUSA3MCA1MCwgODAgNDAgVCAxMDAgNDAiIC8+Cjwvc3ZnPgo=",
-    title: "Twaddle",
-    description: "Generate gibberish using the distilGP2 model.",
-    link: "https://twaddle.page",
-    github: "https://github.com/Stenstromen/twaddle-frontend",
-    badges: [REACTJS, TS, PYTHON, TENSORFLOW, KUBERNETES],
   },
   {
     image: gologo,
@@ -365,24 +367,6 @@ const ProjectList = [
     badges: [GO, KUBERNETES],
   },
   {
-    image: kubectlpvcmount,
-    title: "kubectl-pvcmount",
-    description:
-      "Go binary for temporary mounting of PVCs to a pod. This is useful for debugging purposes or for copying data from a PVC to another location.",
-    link: "https://github.com/Stenstromen/kubectl-pvcmount/releases/latest/",
-    github: "https://github.com/Stenstromen/kubectl-pvcmount",
-    badges: [GO, KUBERNETES],
-  },
-  {
-    image: khaossweeper,
-    title: "KhaosSweeper",
-    description:
-      "Minesweeper game that randomly kills pods in your Kubernetes cluster, when a mine is hit, because why not?",
-    link: "https://github.com/Stenstromen/khaossweeper/releases/latest/",
-    github: "https://github.com/Stenstromen/khaossweeper",
-    badges: [GO, KUBERNETES],
-  },
-  {
     image: vault,
     title: "VaultCTX",
     description:
@@ -391,14 +375,6 @@ const ProjectList = [
     github: "https://github.com/Stenstromen/vaultctx",
     badges: [RUST],
   },
-  /*   {
-    image: arfenhouse,
-    title: "Arfenhouse",
-    description: "Arfenhouse fan page.",
-    link: "https://arfenhou.se",
-    github: "https://github.com/Stenstromen/arfenhouse",
-    badges: [REACTJS, TS, CLOUDFLARE],
-  }, */
   {
     image: detblevingencd,
     title: "det-blev-ingen-cd.se",
