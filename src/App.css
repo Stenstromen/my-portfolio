@@ -190,7 +190,7 @@ html {
 }
 
 .ContactContainer {
-  padding-bottom: none;
+  padding-bottom: 0;
 }
 
 .ContactHeader {
@@ -284,7 +284,7 @@ html {
   }
 
   .ContactContainer {
-    padding-bottom: 109.2%;
+    padding-bottom: 54.6%;
   }
 
   .ContactHeader {
@@ -318,6 +318,7 @@ html {
 
 .section-container#contact {
   background-color: #394357;
+  min-height: 50vh;
 }
 
 .section-container#footer {
