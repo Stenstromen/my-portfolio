@@ -22,7 +22,7 @@ const Badge = ({ className, alt, width, height, src }) => {
     return () => observer.disconnect();
   }, [src]);
 
-  return <img ref={imgRef} className={className} alt={alt} width={width} height={height} src={placeholder} />;
+  return <img ref={imgRef} className={className} alt={alt} width={width} height={height} src={placeholder} loading="eager" fetchPriority="high" decoding="async" />;
 };
 
 Badge.propTypes = {

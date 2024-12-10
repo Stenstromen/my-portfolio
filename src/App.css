@@ -89,6 +89,9 @@ html {
   width: 26.2rem;
   height: 465px;
   border-bottom: 1px solid #f686bd;
+  contain: layout style paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 196.19px;
 }
 
 .ProjectCardContent {
@@ -107,6 +110,9 @@ html {
   height: 196.2px;
   transform: scale(1);
   filter: contrast(100%);
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 .ProjectCardTitle {

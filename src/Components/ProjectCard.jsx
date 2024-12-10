@@ -33,6 +33,9 @@ function ProjectCard({ image, title, description, link, github, badges }) {
               height="196.19px"
               alt={title}
               src={image}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               style={{
                 transition: 'transform 0.3s ease-in-out, filter 0.3s ease-in-out',
                 cursor: 'pointer',
