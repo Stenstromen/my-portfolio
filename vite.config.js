@@ -12,6 +12,15 @@ export default defineConfig(() => {
     build: {
       outDir: "build",
       ssrManifest: true,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'projects': ['./src/Pages/Projects.jsx'],
+            'contact': ['./src/Pages/Contact.jsx'],
+            'footer': ['./src/Pages/Footer.jsx'],
+          }
+        }
+      }
     },
     plugins: [
       react(),
