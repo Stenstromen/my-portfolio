@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet";
 import ProjectList from "./ProjectList";
 import ProjectCard from "../Components/ProjectCard";
 import EndMessage from "../Components/EndMessage";
 import LoadMore from "../Components/LoadMore";
-import projects_social from "../img/projects_social.png";
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -45,12 +43,6 @@ function Projects() {
 
   return (
     <div>
-      <Helmet>
-        <title>Projects | Stenstromen.se</title>
-        <meta property="og:image" content={projects_social} />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-      </Helmet>
       <motion.div
         initial={{ y: "+500px", opacity: 0 }}
         animate={{ y: 0, opacity: isHydrated ? 1 : 0 }}

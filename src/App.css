@@ -208,10 +208,10 @@ html {
   text-align: center;
 }
 
-.LinkedIn {
+/* .LinkedIn {
   width: 340px;
   height: 86px;
-}
+} */
 
 .AppContainer {
   display: flex;
@@ -264,10 +264,10 @@ html {
     width: 22rem;
   }
 
-  .LinkedIn {
+/*   .LinkedIn {
     width: 300px;
     height: 76px;
-  }
+  } */
 
   .HomeH1 {
     padding-top: 15%;
