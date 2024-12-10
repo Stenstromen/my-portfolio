@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import ProjectList from "./ProjectList";
-import ProjectCard from "../Components/ProjectCard";
 import EndMessage from "../Components/EndMessage";
 import LoadMore from "../Components/LoadMore";
+import ProjectList from "./ProjectList";
+const ProjectCard = lazy(() => import("../Components/ProjectCard"));
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -11,6 +11,7 @@ function Projects() {
   const [itemsToLoad, setItemsToLoad] = useState(6);
   const hasMoreProjects = projects.length < ProjectList.length;
   const loadMoreButtonRef = useRef(null);
+  const projectsListRef = useRef(null);
 
   const loadMoreProjects = () => {
     const nextBatch = ProjectList.slice(
@@ -20,7 +21,14 @@ function Projects() {
     setProjects([...projects, ...nextBatch]);
     
     setTimeout(() => {
-      loadMoreButtonRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const lastProjectIndex = projects.length + nextBatch.length - itemsToLoad;
+      const projectCards = document.querySelectorAll('.ProjectCard');
+      if (projectCards[lastProjectIndex]) {
+        projectCards[lastProjectIndex].scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
     }, 100);
   };
 
@@ -52,20 +60,19 @@ function Projects() {
           type: "tween",
         }}
       >
-        <div className="ProjectsList">
-          {projects.map(({ image, title, description, link, github, badges }) => (
-            <ProjectCard
-              key={title}
-              image={image}
-              title={title}
-              description={description}
-              link={link}
-              github={github}
-              badges={badges}
-            />
-          ))}
-          <div ref={loadMoreButtonRef} style={{ marginTop: "200px" }} />
-        </div>
+        <Suspense fallback={<div className="ProjectsList" />}>
+          <div className="ProjectsList" ref={projectsListRef}>
+            {projects.map((project) => (
+              <Suspense 
+                key={project.title}
+                fallback={<div style={{ height: '196.19px' }} />}
+              >
+                <ProjectCard {...project} />
+              </Suspense>
+            ))}
+          </div>
+        </Suspense>
+        <div ref={loadMoreButtonRef} />
 
         {hasMoreProjects && <LoadMore loadMoreProjects={loadMoreProjects} />}
         {!hasMoreProjects && <EndMessage />}

@@ -44,8 +44,8 @@ function Single() {
         });
       },
       {
-        rootMargin: '200px',
-        threshold: 0
+        rootMargin: '50px',
+        threshold: 0.1
       }
     );
 

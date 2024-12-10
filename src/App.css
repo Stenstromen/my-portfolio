@@ -298,6 +298,7 @@ html {
 }
 
 .ProjectCard:hover .ProjectCardImage {
+  will-change: transform, filter;
   transform: scale(1.05);
   filter: contrast(200%);
 }
@@ -380,5 +381,16 @@ html {
   .FooterLinkContainer {
     padding: 8px;
     justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ProjectCard:hover .ProjectCardImage {
+    transform: none;
+  }
+  
+  .motion.div {
+    transition: none !important;
+    animation: none !important;
   }
 }
