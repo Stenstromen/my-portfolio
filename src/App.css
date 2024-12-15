@@ -1,6 +1,8 @@
 body,
 html {
   background-color: #4f5d75 !important;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-link.active {
