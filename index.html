@@ -7,6 +7,13 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-835MSCWR7N"
     ></script>
     <script type="module" src="/src/scripts/gtag.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/serviceWorker.js');
+        });
+      }
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#4f5d75" />
@@ -21,21 +28,121 @@
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/favicon.ico" />
     
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/kubernetes.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/flowerapi.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/nchat.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/detblevingencd.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/weatherapp.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/portfolio.webp">
+<!--     <link rel="preload" as="image" fetchpriority="high" href="/src/img/kubernetes.webp">
+    <link rel="preload" as="image" fetchpriority="high" href="/src/img/flowerapi.webp"> -->
     
     <script type="module" src="/src/index.jsx"></script>
     <meta property="og:image" content="/src/img/homepage_social.png" />
     <meta property="og:image:width" content="512" />
     <meta property="og:image:height" content="512" />
     <title>Stenstromen</title>
+    <style>
+      /* Critical CSS */
+      body, html {
+        background-color: #4f5d75 !important;
+        margin: 0;
+        padding: 0;
+      }
+      .HomeH1 {
+        color: #d8e2dc;
+        padding-left: 5%;
+        padding-top: 3%;
+        font-size: 70px;
+      }
+      
+      /* Skeleton Loading Animation */
+      @keyframes shimmer {
+        0% { background-position: -468px 0 }
+        100% { background-position: 468px 0 }
+      }
+      
+      .skeleton-loader {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(26.2rem, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+      
+      .skeleton-card {
+        background: #fff;
+        border-bottom: 1px solid #f686bd;
+        height: 465px;
+        padding: 1rem;
+      }
+      
+      .skeleton-image,
+      .skeleton-text,
+      .skeleton-title,
+      .skeleton-badges {
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+      }
+      
+      .skeleton-image {
+        width: 196.19px;
+        height: 196.19px;
+        margin-bottom: 1rem;
+      }
+      
+      .skeleton-title {
+        height: 24px;
+        width: 80%;
+        margin-bottom: 0.5rem;
+      }
+      
+      .skeleton-text {
+        height: 16px;
+        width: 90%;
+        margin-bottom: 0.5rem;
+      }
+      
+      .skeleton-badges {
+        height: 28px;
+        width: 60%;
+      }
+    </style>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Initial Loading State -->
+      <div class="skeleton-loader">
+        <div class="skeleton-card">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-badges"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-badges"></div>
+        </div>
+        <div class="skeleton-card">
+          <div class="skeleton-image"></div>
+          <div class="skeleton-title"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-text"></div>
+          <div class="skeleton-badges"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Remove skeleton loader once React has hydrated
+      window.addEventListener('load', function() {
+        const skeletonLoader = document.querySelector('.skeleton-loader');
+        if (skeletonLoader) {
+          setTimeout(() => {
+            skeletonLoader.style.display = 'none';
+          }, 500); // Small delay to ensure smooth transition
+        }
+      });
+    </script>
   </body>
 </html>

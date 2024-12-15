@@ -4,6 +4,7 @@ import EndMessage from "../Components/EndMessage";
 import LoadMore from "../Components/LoadMore";
 import ProjectList from "./ProjectList";
 const ProjectCard = lazy(() => import("../Components/ProjectCard"));
+const ProjectCardSkeleton = lazy(() => import("../Components/ProjectCardSkeleton"));
 
 function Projects() {
   const [isHydrated, setIsHydrated] = useState(false);
@@ -65,7 +66,7 @@ function Projects() {
             {projects.map((project) => (
               <Suspense 
                 key={project.title}
-                fallback={<div style={{ height: '196.19px' }} />}
+                fallback={<ProjectCardSkeleton />}
               >
                 <ProjectCard {...project} />
               </Suspense>

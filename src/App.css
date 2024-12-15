@@ -89,9 +89,9 @@ html {
   width: 26.2rem;
   height: 465px;
   border-bottom: 1px solid #f686bd;
-  contain: layout style paint;
   content-visibility: auto;
-  contain-intrinsic-size: 196.19px;
+  contain-intrinsic-size: 465px;
+  contain: layout style paint;
 }
 
 .ProjectCardContent {
@@ -313,6 +313,9 @@ html {
   min-height: 100vh;
   padding: 20px 0;
   scroll-margin-top: 70px;
+  content-visibility: auto;
+  contain-intrinsic-size: 100vh;
+  contain: layout style paint;
 }
 
 .section-container#home {
@@ -399,4 +402,51 @@ html {
     transition: none !important;
     animation: none !important;
   }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  animation: shimmer 1s linear infinite;
+}
+
+.skeleton-image {
+  height: 196.19px;
+  width: 196.19px;
+  margin: 10px;
+}
+
+.skeleton-text {
+  height: 20px;
+  margin: 10px;
+  width: 80%;
+}
+
+.skeleton-badges {
+  height: 28px;
+  margin: 10px;
+  width: 60%;
+}
+
+.skeleton-link {
+  height: 24px;
+  margin: 10px;
+  width: 40%;
 }
