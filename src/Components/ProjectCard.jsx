@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
@@ -34,7 +35,7 @@ function ProjectCard({ image, title, description, link, github, badges }) {
               alt={title}
               src={image}
               loading="eager"
-              fetchPriority="high"
+              fetchpriority="high"
               decoding="async"
               style={{
                 transition: 'transform 0.3s ease-in-out, filter 0.3s ease-in-out',

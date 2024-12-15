@@ -7,7 +7,10 @@
     "start": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
-    "postbuild": "purgecss --config purgecss.config.cjs && node postbuild.mjs"
+    "postbuild": "purgecss --config purgecss.config.cjs && node postbuild.mjs",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@prerenderer/prerenderer": "^1.2.5",
@@ -27,12 +30,21 @@
     "web-vitals": "^4.2.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "babel-jest": "^29.7.0",
     "@vitejs/plugin-react": "^4.2.1",
     "eslint": "^8.40.0",
     "eslint-plugin-react": "^7.32.2",
     "purgecss": "^6.0.0",
     "vite": "^5.1.4",
-    "vite-plugin-html-prerender": "^0.0.1"
+    "vite-plugin-html-prerender": "^0.0.1",
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
   "eslintConfig": {
     "extends": [

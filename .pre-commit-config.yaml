@@ -1,0 +1,10 @@
+repos:
+  - repo: local
+    hooks:
+      - id: npm-test
+        name: Run npm tests
+        entry: npm run test
+        language: system
+        types: [javascript]
+        pass_filenames: false 
+        always_run: true
