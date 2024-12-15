@@ -450,3 +450,99 @@ html {
   margin: 10px;
   width: 40%;
 }
+
+.projects-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.projects-slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.projects-slider {
+  flex: 1;
+  overflow: hidden;
+  touch-action: pan-x;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.projects-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+.slider-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button.prev {
+  left: 0;
+}
+
+.slider-button.next {
+  right: 0;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.pagination-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .projects-page {
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    gap: 15px;
+  }
+
+  .projects-slider-container {
+    padding: 0 20px;
+  }
+
+  .slider-button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
