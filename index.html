@@ -7,13 +7,6 @@
       src="https://www.googletagmanager.com/gtag/js?id=G-835MSCWR7N"
     ></script>
     <script type="module" src="/src/scripts/gtag.js"></script>
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/serviceWorker.js');
-        });
-      }
-    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#4f5d75" />
@@ -27,9 +20,6 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <link rel="shortcut icon" href="/favicon.ico" />
-    
-<!--     <link rel="preload" as="image" fetchpriority="high" href="/src/img/kubernetes.webp">
-    <link rel="preload" as="image" fetchpriority="high" href="/src/img/flowerapi.webp"> -->
     
     <script type="module" src="/src/index.jsx"></script>
     <meta property="og:image" content="/src/img/homepage_social.png" />
@@ -161,16 +151,5 @@
         </div>
       </div>
     </div>
-    <script>
-      // Remove skeleton loader once React has hydrated
-      window.addEventListener('load', function() {
-        const skeletonLoader = document.querySelector('.skeleton-loader');
-        if (skeletonLoader) {
-          setTimeout(() => {
-            skeletonLoader.style.display = 'none';
-          }, 500); // Small delay to ensure smooth transition
-        }
-      });
-    </script>
   </body>
 </html>
