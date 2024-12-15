@@ -77,6 +77,19 @@ function Single() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
+  useEffect(() => {
+    const hideSkeleton = (sectionId) => {
+      const skeleton = document.querySelector(`#${sectionId} .skeleton-loader, #${sectionId} .skeleton-contact, #${sectionId} .skeleton-footer`);
+      if (skeleton) {
+        skeleton.style.display = 'none';
+      }
+    };
+
+    if (loadComponents.projects) hideSkeleton('projects');
+    if (loadComponents.contact) hideSkeleton('contact');
+    if (loadComponents.footer) hideSkeleton('footer');
+  }, [loadComponents]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -89,9 +102,25 @@ function Single() {
       <div className="section-divider" />
       
       <section id="projects" ref={projectsRef} className="section-container">
-        <Suspense fallback={<div style={{ height: '100vh' }} />}>
-          <AnimatePresence mode="wait">
-            {loadComponents.projects && (
+        <div className="skeleton-loader">
+          <div className="skeleton-card">
+            <div className="skeleton-image"></div>
+            <div className="skeleton-title"></div>
+            <div className="skeleton-text"></div>
+            <div className="skeleton-text"></div>
+            <div className="skeleton-badges"></div>
+          </div>
+          <div className="skeleton-card">
+            <div className="skeleton-image"></div>
+            <div className="skeleton-title"></div>
+            <div className="skeleton-text"></div>
+            <div className="skeleton-text"></div>
+            <div className="skeleton-badges"></div>
+          </div>
+        </div>
+        {loadComponents.projects ? (
+          <Suspense fallback={null}>
+            <AnimatePresence mode="wait">
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -99,16 +128,21 @@ function Single() {
               >
                 <Projects />
               </motion.div>
-            )}
-          </AnimatePresence>
-        </Suspense>
+            </AnimatePresence>
+          </Suspense>
+        ) : null}
       </section>
       <div className="section-divider" />
       
       <section id="contact" ref={contactRef} className="section-container">
-        <Suspense fallback={<div style={{ height: '100vh' }} />}>
-          <AnimatePresence mode="wait">
-            {loadComponents.contact && (
+        <div className="skeleton-contact">
+          <div className="skeleton-title"></div>
+          <div className="skeleton-text"></div>
+          <div className="skeleton-social"></div>
+        </div>
+        {loadComponents.contact ? (
+          <Suspense fallback={null}>
+            <AnimatePresence mode="wait">
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -116,16 +150,20 @@ function Single() {
               >
                 <Contact />
               </motion.div>
-            )}
-          </AnimatePresence>
-        </Suspense>
+            </AnimatePresence>
+          </Suspense>
+        ) : null}
       </section>
       <div className="section-divider" />
       
       <section id="footer" ref={footerRef} className="section-container">
-        <Suspense fallback={<div style={{ height: '50vh' }} />}>
-          <AnimatePresence mode="wait">
-            {loadComponents.footer && (
+        <div className="skeleton-footer">
+          <div className="skeleton-text"></div>
+          <div className="skeleton-links"></div>
+        </div>
+        {loadComponents.footer ? (
+          <Suspense fallback={null}>
+            <AnimatePresence mode="wait">
               <motion.div
                 initial="hidden"
                 animate="visible"
@@ -133,9 +171,9 @@ function Single() {
               >
                 <Footer />
               </motion.div>
-            )}
-          </AnimatePresence>
-        </Suspense>
+            </AnimatePresence>
+          </Suspense>
+        ) : null}
       </section>
 
       {isVisible && (

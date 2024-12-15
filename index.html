@@ -101,6 +101,34 @@
         height: 28px;
         width: 60%;
       }
+      
+      /* Additional skeleton styles */
+      .skeleton-contact,
+      .skeleton-footer {
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.05);
+      }
+      
+      .skeleton-social {
+        height: 86px;
+        width: 340px;
+        margin: 2rem auto;
+      }
+      
+      .skeleton-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+      
+      .skeleton-links::before {
+        content: "";
+        height: 24px;
+        background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite;
+      }
     </style>
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
