@@ -20,8 +20,14 @@ function Projects() {
   useEffect(() => {
     setIsHydrated(true);
     const updateItemsPerPage = () => {
-      const isMobile = window.outerWidth <= 768;
-      setItemsPerPage(isMobile ? 2 : 6);
+      const screenWidth = window.outerWidth;
+      if (screenWidth <= 768) {
+        setItemsPerPage(2);
+      } else if (screenWidth >= 2500) {
+        setItemsPerPage(8);
+      } else {
+        setItemsPerPage(6);
+      }
     };
 
     updateItemsPerPage();

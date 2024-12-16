@@ -272,7 +272,7 @@ html {
     width: 22rem;
   }
 
-/*   .LinkedIn {
+  /*   .LinkedIn {
     width: 300px;
     height: 76px;
   } */
@@ -384,11 +384,11 @@ html {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  
+
   .FooterText {
     display: inline;
   }
-  
+
   .FooterLinkContainer {
     padding: 8px;
     justify-content: flex-start;
@@ -399,7 +399,7 @@ html {
   .ProjectCard:hover .ProjectCardImage {
     transform: none;
   }
-  
+
   .motion.div {
     transition: none !important;
     animation: none !important;
@@ -546,5 +546,12 @@ html {
     width: 30px;
     height: 30px;
     font-size: 14px;
+  }
+}
+
+@media (min-width: 2500px) {
+  .projects-page {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
