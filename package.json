@@ -34,7 +34,7 @@
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-react": "^7.23.3",
     "babel-jest": "^29.7.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.40.0",
     "eslint-plugin-react": "^7.32.2",
     "purgecss": "^6.0.0",
